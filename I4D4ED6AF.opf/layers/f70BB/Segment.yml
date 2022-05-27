@@ -1,0 +1,249 @@
+id: 92a2dbaaa14648f088d433f89cd6ba2a
+annotation_type: Segment
+revision: '00001'
+annotations:
+  bd94c12ccc1f48b597358e84e3c7cad3:
+    span:
+      start: 0
+      end: 1432
+    metadata: {}
+  39c7e5510a6f42ecb3d9b1a661427ac7:
+    span:
+      start: 1435
+      end: 1928
+    metadata: {}
+  3edd4383af764b539018f8dc08d9afd4:
+    span:
+      start: 1931
+      end: 1931
+    metadata: {}
+  5208f926c0eb4a068dd3e96aa009c343:
+    span:
+      start: 1934
+      end: 1934
+    metadata: {}
+  eae3fbf601f2461fbd15295c1fc1df4b:
+    span:
+      start: 1937
+      end: 1937
+    metadata: {}
+  5fdf3944f4e64ecabd5af3ef7a8480c3:
+    span:
+      start: 1940
+      end: 1942
+    metadata: {}
+  8aa315dbb87b471680165a340be19821:
+    span:
+      start: 1945
+      end: 1945
+    metadata: {}
+  49d783f5716e4b78b7b503a69088d985:
+    span:
+      start: 1948
+      end: 1948
+    metadata: {}
+  33a82dcc3f27429a9d05ecdea40c2eb4:
+    span:
+      start: 1951
+      end: 1953
+    metadata: {}
+  a60c7ed9450444a387fcd419f2678991:
+    span:
+      start: 1956
+      end: 1956
+    metadata: {}
+  59582e0a075e4765ba2415be51de5b12:
+    span:
+      start: 1959
+      end: 1963
+    metadata: {}
+  1186cb8f92344c2089810b789e1b7a79:
+    span:
+      start: 1966
+      end: 1969
+    metadata: {}
+  db06fe604e894abf8ba7cf23e3e62e6c:
+    span:
+      start: 1972
+      end: 1972
+    metadata: {}
+  5b8a0dc667554abfa3a46b2c49bdc487:
+    span:
+      start: 1975
+      end: 1975
+    metadata: {}
+  8e0c0001ed814e8480d600415a4f12a7:
+    span:
+      start: 1978
+      end: 1978
+    metadata: {}
+  fbff8c34113e4e5eb9aa0ec37d1aeea2:
+    span:
+      start: 1981
+      end: 1986
+    metadata: {}
+  fb2c5f492a9c461fb73b8a52353dd3bb:
+    span:
+      start: 1989
+      end: 1989
+    metadata: {}
+  c609e0aa1d3a49c2a15c91e48c6dc781:
+    span:
+      start: 1992
+      end: 1992
+    metadata: {}
+  9f1290d5a3254a8e800ea388cbd46403:
+    span:
+      start: 1995
+      end: 1999
+    metadata: {}
+  47d6083106b04ec9945db132b5670a0d:
+    span:
+      start: 2002
+      end: 2002
+    metadata: {}
+  decce3f8029e44d598a2ddc6acc02147:
+    span:
+      start: 2005
+      end: 2005
+    metadata: {}
+  7ef5e4eb0df64eb9b7c71167392b56e3:
+    span:
+      start: 2008
+      end: 2010
+    metadata: {}
+  e3701c36fe4543f19d45d4d026c4d2ec:
+    span:
+      start: 2013
+      end: 2014
+    metadata: {}
+  d3ee2cb45de346439ff64f9ad064469f:
+    span:
+      start: 2017
+      end: 2024
+    metadata: {}
+  07bbc8c6b429425a896033aa044058ed:
+    span:
+      start: 2027
+      end: 2027
+    metadata: {}
+  2acbed39cd184651b2c6839bbaf25738:
+    span:
+      start: 2030
+      end: 2030
+    metadata: {}
+  241e892e87f94351a90954879a7def14:
+    span:
+      start: 2033
+      end: 2033
+    metadata: {}
+  f049ea2d77b046cc876f6f9fad16f978:
+    span:
+      start: 2036
+      end: 2036
+    metadata: {}
+  e6d44337af18456881257be7d6451d11:
+    span:
+      start: 2039
+      end: 2039
+    metadata: {}
+  c35c2742e1944f168b451f02f510a0da:
+    span:
+      start: 2042
+      end: 2042
+    metadata: {}
+  7697db0ff85b46edba1fe5aca050d2f8:
+    span:
+      start: 2045
+      end: 2049
+    metadata: {}
+  180676cbe36e4290a2efe40c76d7ddf0:
+    span:
+      start: 2052
+      end: 2052
+    metadata: {}
+  d4661caa400840ac887eec580f7f07b6:
+    span:
+      start: 2055
+      end: 2055
+    metadata: {}
+  be221b721cb04b858546e64c953c5c98:
+    span:
+      start: 2058
+      end: 2058
+    metadata: {}
+  46b7a34afd194aefaa71488b269e0416:
+    span:
+      start: 2061
+      end: 2061
+    metadata: {}
+  7f48da74611746888e94214c4c6f092a:
+    span:
+      start: 2064
+      end: 2070
+    metadata: {}
+  98cd2bc14e5443e1af3725793bcfd050:
+    span:
+      start: 2073
+      end: 2073
+    metadata: {}
+  f8b478dd15254fa0b46ef6a43a195516:
+    span:
+      start: 2076
+      end: 2076
+    metadata: {}
+  b375013597b245c6b1552e7306cfe7ca:
+    span:
+      start: 2079
+      end: 2079
+    metadata: {}
+  cff348abec544637ae3b4184ccd6e707:
+    span:
+      start: 2082
+      end: 2085
+    metadata: {}
+  2c93e8c501ba4b0baa4cdfcb79fb6380:
+    span:
+      start: 2088
+      end: 2088
+    metadata: {}
+  9d3762ed08e643acb7bd8e05b27264f9:
+    span:
+      start: 2091
+      end: 2091
+    metadata: {}
+  8dca5b598e994240a72c03aa5b3de7a5:
+    span:
+      start: 2094
+      end: 2094
+    metadata: {}
+  92dcc8455e8e428b827aea2f68b8267b:
+    span:
+      start: 2097
+      end: 2097
+    metadata: {}
+  f27fbc4d0d8e4c43a5f33ddce3dccd94:
+    span:
+      start: 2100
+      end: 2100
+    metadata: {}
+  7ff7b06cb4494dd7bb3590ef38080406:
+    span:
+      start: 2103
+      end: 2103
+    metadata: {}
+  794940f430154ec39ebfdf6b4172583f:
+    span:
+      start: 2106
+      end: 2106
+    metadata: {}
+  d2992e6923d64f1782b8cb1037548ad6:
+    span:
+      start: 2109
+      end: 2109
+    metadata: {}
+  0e50e0e680ef48c3ad919c11a6e2e148:
+    span:
+      start: 2112
+      end: 2112
+    metadata: {}

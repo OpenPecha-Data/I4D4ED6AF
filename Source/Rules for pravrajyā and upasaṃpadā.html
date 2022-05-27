@@ -1,0 +1,1123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=499' accesskey='1'>MSV 1,01: Pravrajyāvastu</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>MSV 1,01: Pravrajyāvastu<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_499[3310]" value="3310" id="lancheckbox" checked >Sanskrit: Pravr-v II, GMB, Pravr-v I, GMB, Pravr-v III, GMB, Pravr-v IV, GMB</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_499[3305]" value="3305" id="lancheckbox" checked >Tibetan: Kj D ’dul ba ka</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="499">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="499">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='499'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v499">Search in MSV 1,01: Pravrajyāvastu</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=499'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=499'>MSV 1,01: Pravrajyāvastu</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=499" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="50990.Pravrajyavastupiṇḍoddāna|50991.Uddāna|50992.Historicalevents|50993.Śāriputra|50994.Maudgalyāyana|50996.MaudgalyāyanaandŚāriputrasearchingforteachersofvariousphilosopicalcreeds|51000.TheconversionofMaudgalyāyanaandŚāriputra|51001.TheconversionofKoṣṭhila|51002.Antaroddāna|51003.WhyŚāriputrawaswise1|51004.WhyŚāriputrawasneitherrichnorpoor|51005.WhyŚāriputrawaswise2|51006.WhyMaudgalyānahasmagicalpower1|51007.WhyMaudgalyānahasmagicalpower2|51008.WhyKoṣṭhilaispratisaṃvedin|51009.Rulesforpravrajyāandupasaṃpadā|51010.Antaroddāna|51011.Antaroddāna|51012.Uddāna|51013.Uddāna|51014.Uddāna|51015.Maudgalyāyana’sjourneytoHellandHeaven|51016.Ānanda’stwonephews|51017.Buddha’ssmile|51018.Nāgakumāra|51019.Saṃgharakṣitāvadāna|51021.WhySaṃgharakṣitawasborninarichfamily|51022.Nāgakumārāvadāna|51023.RuleagainstordinationofTīrthkas|51024.Mātṛghātaka|51025.Pitṛghātaka|51026.Uddāna|51027.ānantaryānikarmāṇi,pārājika,utkṣepaṇīya|51028.Uddāna|51029.Bodilyimperfections|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50990.Pravrajyavastupiṇḍoddāna" border=0 hspace=2><a id="href_50990.Pravrajyavastupiṇḍoddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820121&level=1&cid=460194" class="ajax_tree0">Pravrajyavastupiṇḍoddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50991.Uddāna" border=0 hspace=2><a id="href_50991.Uddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820122&level=1&cid=460195" class="ajax_tree0">Uddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50992.Historicalevents" border=0 hspace=2><a id="href_50992.Historicalevents" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820123&level=1&cid=460196" class="ajax_tree0">Historical events
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50993.Śāriputra" border=0 hspace=2><a id="href_50993.Śāriputra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820206&level=1&cid=460214" class="ajax_tree0">Śāriputra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('50994.Maudgalyāyana','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_50994.Maudgalyāyana" border=0 hspace=2><a id="href_50994.Maudgalyāyana" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820357&level=1&cid=460232" class="ajax_tree0">Maudgalyāyana
+</td></tr></table>
+<div style="display:none;"  id="div_50994.Maudgalyāyana">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50995.ŚāriputraandMahāmaudgalyāyana" border=0 hspace=2><a id="href_50995.ŚāriputraandMahāmaudgalyāyana" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820407&level=3&cid=460243" class="ajax_tree1">Śāriputra and Mahāmaudgalyāyana
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('50996.MaudgalyāyanaandŚāriputrasearchingforteachersofvariousphilosopicalcreeds','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_50996.MaudgalyāyanaandŚāriputrasearchingforteachersofvariousphilosopicalcreeds" border=0 hspace=2><a id="href_50996.MaudgalyāyanaandŚāriputrasearchingforteachersofvariousphilosopicalcreeds" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820525&level=1&cid=460271" class="ajax_tree0">Maudgalyāyana and Śāriputra searching for teachers of various philosopical creeds
+</td></tr></table>
+<div style="display:none;"  id="div_50996.MaudgalyāyanaandŚāriputrasearchingforteachersofvariousphilosopicalcreeds">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50997.TeacherI,PūraṇaKāśyapa" border=0 hspace=2><a id="href_50997.TeacherI,PūraṇaKāśyapa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820526&level=2&cid=460272" class="ajax_tree1">Teacher I, Pūraṇa Kāśyapa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50998.TeacherII,MaskarinGośālīputra" border=0 hspace=2><a id="href_50998.TeacherII,MaskarinGośālīputra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820539&level=2&cid=460275" class="ajax_tree1">Teacher II, Maskarin Gośālīputra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50999.TeacherIII,SaṃjayinVairaṭīputra" border=0 hspace=2><a id="href_50999.TeacherIII,SaṃjayinVairaṭīputra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820544&level=2&cid=460279" class="ajax_tree1">Teacher III, Saṃjayin Vairaṭīputra
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51000.TheconversionofMaudgalyāyanaandŚāriputra" border=0 hspace=2><a id="href_51000.TheconversionofMaudgalyāyanaandŚāriputra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820655&level=1&cid=460299" class="ajax_tree0">The conversion of Maudgalyāyana and Śāriputra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51001.TheconversionofKoṣṭhila" border=0 hspace=2><a id="href_51001.TheconversionofKoṣṭhila" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820763&level=1&cid=460348" class="ajax_tree0">The conversion of Koṣṭhila
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51002.Antaroddāna" border=0 hspace=2><a id="href_51002.Antaroddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820840&level=1&cid=460355" class="ajax_tree0">Antaroddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51003.WhyŚāriputrawaswise1" border=0 hspace=2><a id="href_51003.WhyŚāriputrawaswise1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820841&level=1&cid=460356" class="ajax_tree0">Why Śāriputra was wise 1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51004.WhyŚāriputrawasneitherrichnorpoor" border=0 hspace=2><a id="href_51004.WhyŚāriputrawasneitherrichnorpoor" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820874&level=1&cid=460359" class="ajax_tree0">Why Śāriputra was neither rich nor poor
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51005.WhyŚāriputrawaswise2" border=0 hspace=2><a id="href_51005.WhyŚāriputrawaswise2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820895&level=1&cid=460362" class="ajax_tree0">Why Śāriputra was wise 2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51006.WhyMaudgalyānahasmagicalpower1" border=0 hspace=2><a id="href_51006.WhyMaudgalyānahasmagicalpower1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820917&level=1&cid=460366" class="ajax_tree0">Why Maudgalyāna has magical power 1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51007.WhyMaudgalyānahasmagicalpower2" border=0 hspace=2><a id="href_51007.WhyMaudgalyānahasmagicalpower2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820921&level=1&cid=460367" class="ajax_tree0">Why Maudgalyāna has magical power 2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51008.WhyKoṣṭhilaispratisaṃvedin" border=0 hspace=2><a id="href_51008.WhyKoṣṭhilaispratisaṃvedin" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820923&level=1&cid=460368" class="ajax_tree0">Why Koṣṭhila is pratisaṃvedin
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51009.Rulesforpravrajyāandupasaṃpadā" border=0 hspace=2><a id="href_51009.Rulesforpravrajyāandupasaṃpadā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820924&level=1&cid=460369" class="ajax_tree0">Rules for pravrajyā and upasaṃpadā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51010.Antaroddāna" border=0 hspace=2><a id="href_51010.Antaroddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821269&level=1&cid=460435" class="ajax_tree0">Antaroddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51011.Antaroddāna" border=0 hspace=2><a id="href_51011.Antaroddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821374&level=1&cid=460461" class="ajax_tree0">Antaroddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51012.Uddāna" border=0 hspace=2><a id="href_51012.Uddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821375&level=1&cid=460462" class="ajax_tree0">Uddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51013.Uddāna" border=0 hspace=2><a id="href_51013.Uddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821428&level=1&cid=460470" class="ajax_tree0">Uddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51014.Uddāna" border=0 hspace=2><a id="href_51014.Uddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821585&level=1&cid=460484" class="ajax_tree0">Uddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51015.Maudgalyāyana’sjourneytoHellandHeaven" border=0 hspace=2><a id="href_51015.Maudgalyāyana’sjourneytoHellandHeaven" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821586&level=1&cid=460485" class="ajax_tree0">Maudgalyāyana’s journey to Hell and Heaven
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51016.Ānanda’stwonephews" border=0 hspace=2><a id="href_51016.Ānanda’stwonephews" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821662&level=1&cid=460495" class="ajax_tree0">Ānanda’s two nephews
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51017.Buddha’ssmile" border=0 hspace=2><a id="href_51017.Buddha’ssmile" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821669&level=1&cid=460498" class="ajax_tree0">Buddha’s smile
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51018.Nāgakumāra" border=0 hspace=2><a id="href_51018.Nāgakumāra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821739&level=1&cid=460516" class="ajax_tree0">Nāgakumāra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('51019.Saṃgharakṣitāvadāna','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_51019.Saṃgharakṣitāvadāna" border=0 hspace=2><a id="href_51019.Saṃgharakṣitāvadāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821822&level=1&cid=460520" class="ajax_tree0">Saṃgharakṣitāvadāna
+</td></tr></table>
+<div style="display:none;"  id="div_51019.Saṃgharakṣitāvadāna">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51020.BuddhainVaiśālī" border=0 hspace=2><a id="href_51020.BuddhainVaiśālī" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822003&level=2&cid=460561" class="ajax_tree1">Buddha in Vaiśālī
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51021.WhySaṃgharakṣitawasborninarichfamily" border=0 hspace=2><a id="href_51021.WhySaṃgharakṣitawasborninarichfamily" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822120&level=1&cid=460621" class="ajax_tree0">Why Saṃgharakṣita was born in a rich family
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51022.Nāgakumārāvadāna" border=0 hspace=2><a id="href_51022.Nāgakumārāvadāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822148&level=1&cid=460630" class="ajax_tree0">Nāgakumārāvadāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51023.RuleagainstordinationofTīrthkas" border=0 hspace=2><a id="href_51023.RuleagainstordinationofTīrthkas" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822192&level=1&cid=460640" class="ajax_tree0">Rule against ordination of Tīrthkas
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51024.Mātṛghātaka" border=0 hspace=2><a id="href_51024.Mātṛghātaka" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822210&level=1&cid=460644" class="ajax_tree0">Mātṛghātaka
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51025.Pitṛghātaka" border=0 hspace=2><a id="href_51025.Pitṛghātaka" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822308&level=1&cid=460666" class="ajax_tree0">Pitṛghātaka
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51026.Uddāna" border=0 hspace=2><a id="href_51026.Uddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822380&level=1&cid=460676" class="ajax_tree0">Uddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51027.ānantaryānikarmāṇi,pārājika,utkṣepaṇīya" border=0 hspace=2><a id="href_51027.ānantaryānikarmāṇi,pārājika,utkṣepaṇīya" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822381&level=1&cid=460677" class="ajax_tree0">ānantaryāni karmāṇi, pārājika, utkṣepaṇīya
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51028.Uddāna" border=0 hspace=2><a id="href_51028.Uddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822431&level=1&cid=460703" class="ajax_tree0">Uddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51029.Bodilyimperfections" border=0 hspace=2><a id="href_51029.Bodilyimperfections" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822432&level=1&cid=460704" class="ajax_tree0">Bodily imperfections
+</td></tr></table>
+<script language=javascript>test('51009.Rulesforpravrajyāandupasaṃpadā|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=499&amp;mid=820924&amp;level=1">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=499&amp;cid=460369&amp;mid=820924&amp;level=1">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=499&amp;cid=460369&amp;mid=820924&amp;level=1">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><div class='kilderef' id='3730843'></div><div class='clear'></div><span id='3730843bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><div class='kilderef' id='3719138'></div><div class='clear'></div><span id='3719138bi' class='paragraph'>
+							de’i tshe na legs par gsuṅs pa’i chos ’dul ba la ’di ltar rab tu ’byuṅ ba daṅ bsñen par rdzogs pa dge sloṅ gi dṅos por ’gyur te | bcom ldan ’das kyis dge sloṅ tshur śog ces bya bas rab tu ’byin par mdzad ciṅ bsñen par rdzogs par mdzad pas ’ga’ (7) źig gi gan du rab tu ’byuṅ bar ’dod pa ’oṅs pa na | bcom ldan ’das kyis dge sloṅ tshur śog ces bya bas rab tu ’byin par mdzad ciṅ | dge sloṅ chur śog ces bya bas bsñen par rdzogs par mdzad par ’gyur ro sñam nas | des de khrid de bcom ldan ’das gal bder (47b1) ’gro’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730844bi' class='paragraph'>
+							.&nbsp;</span><span id='3730845bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730846bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730847bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730848bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730849bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719139bi' class='paragraph'>
+							dge sloṅ źig gi gan du rab tu ’byuṅ bar ’dod pa źig ’oṅs pa na | bcom ldan ’das kyis dge sloṅ tshur śog ces bya bas rab tu ’byin par mdzad ciṅ | dge sloṅ tshur śog ces bya bas bsñen pa rdzogs par mdzad par ’gyur ro sñam nas | des da khrid de (2) bcom ldan ’das gal ba der soṅ ba daṅ | des bcom ldan ’das kyi spyan sṅar ma phyin pa kho nar bar ma dor rgyun chad ciṅ śi bar gyur te | de ñid de’i legs par gsuṅs pa’i chos ’dul ba la rab tu ’byuṅ ba daṅ | bsñen pa rdzogs pa dge sloṅ gi dṅos por ’gyur pa’i bar (3) chad du gyur pa’i skabs de bcom ldan ’das la dge sloṅ rnams kyis gsol ba daṅ | bcom ldan ’das kyis dgoṅs pa | kye ma ṅa’i ñan thos rnams thag riṅ po daṅ ches riṅ po nas ’oṅ ba rnams ṅal bar ’gyur ro sñam nas bka’ stsal pa | de lta bas na deṅ nas dge ’dun (4) gyis rab tu dbyuṅ ba daṅ | dge ’dun gyis bsñen par rdzogs par bya bar gnaṅ ṅo ||&nbsp;</span><span id='3719140bi' class='paragraph'>
+						 bcom ldan ’das kyis dge ’dun gyis rab tu dbyuṅ bar bya ba daṅ | dge ’dun gyis bsñen par rdzogs par bya’o źes bka’ stsal nas | de dag gis ji ltar rab tu dbyuṅ bar bya ba (5) daṅ | ji ltar bsñen par rdzogs par bya ba mi śes pa’i skabs de bcom ldan ’das la dge sloṅ rnams kyis gsol ba daṅ | bcom ldan ’das kyis bka’ stsal pa | ’ga’ źig gi gan du rab tu ’byuṅ bar ’dod pa ’oṅs na | des de gzuṅ bar bya źiṅ bzuṅ nas dge (6) ’dun thams cad ’dus pa na cha lugs ’di bźin byas śiṅ rgan rims la phyag ’tshal du bcug ste | thal mo sbyar nas tsog tsog por ’dug tu bcug ste | lan gsum gsol ba ’debs su bcug nas dge sloṅ gcig gis gsol ba daṅ bźi’i las kyis cig car rab (7) tu ’byuṅ ba daṅ bsñen par rdzogs pa ñe bar bsgrub par bya’o ||&nbsp;</span><span id='3719141bi' class='paragraph'>
+						 des ’di skad ces brjod par bya ste | dge ’dun btsun pa rnams gsan du gsol | bdag miṅ ’di źes bgyi ba dge ’dun las rab tu ’byuṅ ba daṅ | bsñen par rdzogs pa dge sloṅ gi dṅos por gsol na (48a1) thugs brtsen ba can dge ’dun btsun pa rnams kyis thugs brtse ba’i slad du bdag rab tu dbyuṅ du gsol | bsñen par rdzogs par mdzad du gsol | de bźin du lan gñis lan gsum du bzlas |&nbsp;</span><span id='3719142bi' class='paragraph'>
+						 de’i ’og tu dge sloṅ gcig gis gsol ba byas te (2) las bya’o ||&nbsp;</span><span id='3719143bi' class='paragraph'>
+						 ’di ltar byas te ’dug la ’di skad brjod par bya ste | dge ’dun btsun pa rnams gsan du gsol | miṅ ’di źes bgyi ba ’di dge ’dun la rab tu ’byuṅ ba daṅ bsñen par rdzogs pa dge sloṅ gi dṅos po gsol na | gal te dge ’dun gyi dus la ba bciṅ bzod na (3) dge ’dan gyis gnaṅ par mdzod cig daṅ | dge ’dun gyis miṅ ’di źes bgyi ba rab tu ’byin to ||&nbsp;</span><span id='3719144bi' class='paragraph'>
+						 bsñen par rdzogs par mdzad do ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730850bi' class='paragraph'>
+							.&nbsp;</span><span id='3730851bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719145bi' class='paragraph'>
+							’di ni gsol ba’o || las ni ’di ltar bya ste | dge ’dun btsun pa rnams gsan du gsol | miṅ ’di źes bgyi ba ’di dge ’dun las (4) rab tu ’byuṅ ba daṅ bsñen par rdzogs pa dge sloṅ gi dṅos po gsol te | de’i slad du dge ’dun gyis miṅ ’di źes bgyi ba rab tu dbyuṅ ba daṅ | bsñen par rdzogs par mdzad na | tshe daṅ ldan pa gaṅ dag miṅ ’di źes bgyi ba rab tu dbyuṅ ba daṅ | bsñen par rdzogs par (5) mdzad par bzod pa de dag ni caṅ ma gsuṅ śig | gaṅ dag mi bzod pa de dag ni gsuṅ śig | ’di ni las brjod pa daṅ po ste | de bźin du lan gñis lan gsum du bzlas | dge ’dun gyis bzod ciṅ gnaṅ nas dge ’dun gyis miṅ ’di źis bgyi ba rab tu phyuṅ ba daṅ bsñen (6) par rdzogs par mdzad lags te | ’di ltar caṅ mi gsuṅ bas de de bźin du ’dzin to ||&nbsp;</span><span id='3719146bi' class='paragraph'>
+						 de ni sṅon gyi cho ga’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730852bi' class='paragraph'>
+							.&nbsp;</span><span id='3730853bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730854bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730855bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730856bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730857bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730858bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730859bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730860bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730861bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730862bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730863bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719147bi' class='paragraph'>
+							de ltar rab tu byuṅ źiṅ bsñen par rdzogs pa dag mkhan po med pa daṅ | slob dpon med pas legs par ma sbyaṅs pa daṅ | legs par ma bgos pa daṅ | sgra (7) mthon po daṅ | sgra chen po daṅ | rgod bag gi spyod lam gyis bram ze daṅ khyim bdag gi khyim dag tu ’doṅ źiṅ de dag der dras sloṅ bar byed | zas gloṅ du ’jug par byed | sran tshod sloṅ bar byed | sran tshod sloṅ bar byed | sran tshod slaṅ du ’jug par byed ciṅ bstan pa daṅ ’gal ba gźan dag (48b1) kyaṅ byed nas | gźan mu stegs can dag śes ldan dag śākya ’i bu’i dge sbyoṅ ’di dag ni mkhan po med pa daṅ | slob dpon med pas les par ma sbyaṅs pa daṅ | legs par ma bgos pa daṅ | sgra mthon po daṅ | sgra chen po daṅ | rgod bag gi spyod lam gyis (2) bram ze daṅ khyim bdag gi khyim dag tu ’doṅ źiṅ de dag de zas sloṅ bar byed | zas sloṅ du ’jug par byed | sran tshod sloṅ bar byed | sran tshod slaṅ du ’jug par byed de | dge spyoṅ mgo reg ’di dgal su źiṅ bsod sñoms sbyin pa daṅ | bya bar sems źes (3) smod par byed | phyar ka gtoṅ bar byed | kha zer bar byed do ||&nbsp;</span><span id='3719148bi' class='paragraph'>
+						 dge sloṅ naṅ pa źig kyaṅ nad g-yog daṅ bral bas śi bar gyur pa’i skabs de bcom ldan ’das la dge sloṅ rnams kyis gsol ba daṅ | bcom ldan ’das kyis dgoṅs pa | ṅas ñan thos rnams gcig (4) gis gcig bsdu ba’i phyir daṅ | nad pa rnams la rim gro bya ba’i phyir mkhan po daṅ slob dpon dag gnaṅ bar bya’o sñam nas bka’ stsal pa | de lta bas na mkhan po daṅ slob dpon dag gis rab tu dbyuṅ bar bya ba daṅ | bsñen par rdzogs par bya bar gnaṅ ṅo ||&nbsp;</span><span id='3719149bi' class='paragraph'>
+						 bcom ldan (5) ’das kyis mkhan po daṅ slob dpon dag gis rab tu dbyuṅ bar bya | bsñen par rdzogs par bya’o źes bka’ stsal nas | de dag gis mkhan po daṅ slob dpon du yod mi śes nas bcom ldan ’das kyis bka’ stsal pa | slob dpon ni lṅa | mkhan po ni gñis so ||&nbsp;</span><span id='3719150bi' class='paragraph'>
+						 slob (6) dpon lṅa gaṅ źe na | dge tshul gyi slob dpon daṅ | gsaṅ ste ston pa daṅ | las byed pa daṅ | gnas sbyin pa’i slob dpon daṅ | klog pa’i slob dpon no ||&nbsp;</span><span id='3719151bi' class='paragraph'>
+						 dge tshul gyi slob dpon gaṅ źe na | gaṅ gis skyabs su ’gro ba daṅ | bslab pa’i gźi dag byin pa yin no | (7) | gsaṅ ste ston pa gaṅ źe na | gaṅ gis gsaṅ ste bstan pa yin no ||&nbsp;</span><span id='3719152bi' class='paragraph'>
+						 las byed pa gaṅ źe na | gaṅ gis gsol ba daṅ bźi’i las kyis las byas pa yin no ||&nbsp;</span><span id='3719153bi' class='paragraph'>
+						 gnas sbyin pa’i slob dpon gaṅ źe na | gaṅ gi druṅ du źag gcig tsam yaṅ gnas pas ’dug pa yin no ||&nbsp;</span><span id='3719154bi' class='paragraph'>
+						 (49a1) klog pa’i slob dpon gaṅ źen | gaṅ las tshig bźi pa’i tshigs su bcad pa tsam yaṅ lan gsum du bzlas te bzuṅ ba yin no ||&nbsp;</span><span id='3719155bi' class='paragraph'>
+						 mkhan po gñis gaṅ źe na | rab tu ’byin par byed pa gaṅ yin pa daṅ | bsñen par rdzogs par byed pa gaṅ yin pa’o ||&nbsp;</span><span id='3719156bi' class='paragraph'>
+						 bcom ldan ’das kyis mkhan po daṅ slob dpon (2) dag gis rab tu dbyuṅ bar bya źiṅ bsñen par rdzogs par bya’o źes bka’ stsal nas | dge sloṅ rnams kyis ji ltar rab tu dbyuṅ bar bya ba daṅ | ji ltar bsñen par rdzogs par bya ba mi śes nas bcom ldan ’das kyis bka’ stsal pa | ’ga’ źig gi gan du rab ta ’byuṅ (3) par ’dod pa ’oṅs na des de la bar chad kyi chos rnams dris nas gzuṅ bar bya’o ||&nbsp;</span><span id='3719157bi' class='paragraph'>
+						 bzuṅ nas gsum la skyabs su ’gro ba daṅ | dge bsñen ñid du khas blaṅs pas dge bsñen gyi sdom pa sbyin par bya’o ||&nbsp;</span><span id='3719158bi' class='paragraph'>
+						 ’di ltar sbyin par bya ste | daṅ por ston pa la phyag ’tshal du (4) gźug go ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730864bi' class='paragraph'>
+							.&nbsp;</span><span id='3730865bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730866bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730867bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730868bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730869bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730870bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719159bi' class='paragraph'>
+							de’i ’og tu slob dpon la phyag ’tshal du bcug nas mdun du tsog tsog por ’dug tu bcug ste | thal mo sbyor du bcug nas des ’di skad ces brjod par bya ste | btsun pa dgoṅs su gsol | bdag miṅ ’di źes bgyi bdus ’di nas bzuṅ ste | ji srid (5) ’tsho ’i bar du rkaṅ gñis rnams kyi mchog saṅs rgyas la skyabs su ’chi’o ||&nbsp;</span><span id='3719160bi' class='paragraph'>
+						 ’dod chags daṅ bral ba rnams kyi mchog chos la skyabs su mchi’o ||&nbsp;</span><span id='3719161bi' class='paragraph'>
+						 tshogs rnams kyi mchog dge ’dun la skyabs su ’chi’o ||&nbsp;</span><span id='3719162bi' class='paragraph'>
+						 bdag ji srid ’tsho’i bar du dge bsñen du btsun pas (6) gzuṅ du gsol | de bźin du lan gñis lan gsum du bzlas | tshig gsum pa la slob dpon gyis źes brjod par bya’o ||&nbsp;</span><span id='3719163bi' class='paragraph'>
+						 slob dpon gyis thabs yin no źes brjod par bya’o ||&nbsp;</span><span id='3719164bi' class='paragraph'>
+						 dge bsñen gyis legs so źes brjod par bya’o ||&nbsp;</span><span id='3719165bi' class='paragraph'>
+						 de ni dge bsñen gyi sdom pa sbyin (7) pa’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730871bi' class='paragraph'>
+							.&nbsp;</span><span id='3730872bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730873bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730874bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730875bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719166bi' class='paragraph'>
+							de’i ’og tu bslab pa brjod pa khas blaṅ ba’i tshul gyis bya’o ||&nbsp;</span><span id='3719167bi' class='paragraph'>
+						 ’di ltar bya ste | slob dpon dgoṅs su gsol | ji.i ltar ’phags pa dgra bcom pa de dag gis ji srid ’tsho’i bar du srog gcod pa spaṅs te srog gcod pa las slar log pa de bźin du | bdag miṅ (49b1) ’di źes bgyi bas kyaṅ dus ’di nas bzuṅ ste | ji srid ’tsho’i bar du srog gcod pha spaṅs te | srog gcod pa las slar ldog par bgyi’o ||&nbsp;</span><span id='3719168bi' class='paragraph'>
+						 yan lag daṅ po ’dis bdag ’phags pa dgra bacomapa de dag gi bslab pa la rjes su slob po ||&nbsp;</span><span id='3719169bi' class='paragraph'>
+						 rjes suṅ sgrub po ||&nbsp;</span><span id='3719170bi' class='paragraph'>
+						 rjes (2) su bgyid do ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730876bi' class='paragraph'>
+							.&nbsp;</span><span id='3730877bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730878bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730879bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730880bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730881bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719171bi' class='paragraph'>
+							gźan yaṅ ji ltar ’phags pa dgra bcom pa de dag gis ji srid ’tsho’i bar du ma byin par len pa daṅ | ’dod pas log par g-yem pa daṅ | brdzun du smra ba daṅ | ’byu’i chaṅ daṅ bcos pa’i chad myos par ’gyur ba bag med pa’i gnas spaṅs te | (3) ’bru’i chaṅ daṅ bcos pa’i chaṅ myos par ’gyur ba bag med pa’i gnas las slar log pa de bźin du | bdag miṅ ’di źes bgyi bas kyaṅ dus ’di rnas bzuṅ ste | ji sriṅ ’tsho’i bar du ma byin par len pa daṅ | ’dod pa la log par g-yem pa daṅ | brdzun du smra ba daṅ | (4) ’bru’i chaṅ daṅ bcos pa’i chaṅ myos par ’gyur ba bag med pa’i gnas spaṅs te | ’bru’i chaṅ daṅ bcos pa’i chaṅ myos par ’gyur ba bag med pa’i gnas las slar ldog par bgyi’o ||&nbsp;</span><span id='3719172bi' class='paragraph'>
+						 yan lag lda pa ’dis bdag ’phags pa dgra bcom pa de dag gi bslab pa la rjes su slob (5) po ||&nbsp;</span><span id='3719173bi' class='paragraph'>
+						 rjes su sgrub po ||&nbsp;</span><span id='3719174bi' class='paragraph'>
+						 rjes su bgyid do ||&nbsp;</span><span id='3719175bi' class='paragraph'>
+						 slob dpon gyis thabs yin no źes brjod par bya’o ||&nbsp;</span><span id='3719176bi' class='paragraph'>
+						 dge bsñen gyis legs so źes brjod par bya’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730882bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719177bi' class='paragraph'>
+							dge bsñen ñid du ñe bar sgrub pa’i chog rdzogs sho || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730883bi' class='paragraph'>
+							.&nbsp;</span><span id='3730884bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730885bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719178bi' class='paragraph'>
+							de’i ’og tu gaṅ gis de źu bar byed pa’i dge sloṅ (6) la gtad par bya’o ||&nbsp;</span><span id='3719179bi' class='paragraph'>
+						 źu ba’i dge sloṅ gis mkhan po la khyod kyis bar chad kyi chos rnams dris sam źes dri bar bya’o ||&nbsp;</span><span id='3719180bi' class='paragraph'>
+						 ma dris par źu bar byed na ’gal tshabs can du ’gyur ro ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730886bi' class='paragraph'>
+							.&nbsp;</span><span id='3730887bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730888bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730889bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719181bi' class='paragraph'>
+							de’i ’og tu źu ba’i dge sloṅ gis źu bar bya’o ||&nbsp;</span><span id='3719182bi' class='paragraph'>
+						 ’di ltar źu bar bya ste | gnas mal (7) bśam pa byas nas gaṇa ḍī brduṅs te dris pa’i tshig gis dge sloṅ rnams la yaṅ dag par bsgo nas dge ’dan thams cad ’dug ciṅ mthun par gyur pa la ’aṅ ruṅ | gnas khaṅ so so na ’khod pa la’aṅ ruṅ ste | rgan rims la phyag ’tshal du bcug nas tsog tsog (50a1) por ’dug tu bcug ste | thal mo sbyor du bcug nas źu bar byed pas ’di skad ces brjod par bya ste | dge ’dun btsun pa rnams gsan du gsol | miṅ ’di źes bgyi ba ’di mkhan po miṅ ’di źes bgyi ba las rab tu ’byuṅ bar ’tshal te | khyim pa (2) gos dkar po can skra daṅ kha spu ma bregs pa las legs par gsuṅs pa’i chos ’dul ba la rab tu ’byuṅ bar ’tshal te | miṅ ’di źes bgyi ba ’di rab tu ’byuṅ bar ’tshal źiṅ skra daṅ kha spu bregs nas gos dur smrig bgos te | yaṅ dag pa kho nar dad pas khyim nas khyim med (3) par mkhan po miṅ ’di źes bgyi ba las rab tu ’byuṅ ste | de yaṅ bar chad kyi chos rnams yoṅs su dag go źes kho na ñid mchin | ci de rab tu dbyuṅ ṅam de dag thams cad kyis gal te yoṅs su dag na’o źes brjod par bya’o ||&nbsp;</span><span id='3719183bi' class='paragraph'>
+						 gal te de skad brjod na de lta na legs | gal (4) te mi brjod na ’gal tshabs tsan du ’gyur ro ||&nbsp;</span><span id='3719184bi' class='paragraph'>
+						 de ni rab tu ’byuṅ bar ’dod pa źu bya’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730890bi' class='paragraph'>
+							.&nbsp;</span><span id='3730891bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730892bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730893bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730894bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730895bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719185bi' class='paragraph'>
+							de’i ’og tu mkhan por gsol ba’o ||&nbsp;</span><span id='3719186bi' class='paragraph'>
+						 ’di ltar gsol bar bya ste | mkhan po la phyag ’tshal du bcug nas mdun du tsog tsog por ’dug tu bcug ste | thal mo (5) sbyor du bcug nas des ’di skad ces brjod par bya ste | slob dpon dgoṅs su gsol | bdag miṅ ’di źes bgyi ba slob dpon la mkhan por sol gyis | slob dpon bdag gi mkhan po mdzad du gsol | slob dpon mkhan pos rab tu ’byuṅ bar bgyi’o ||&nbsp;</span><span id='3719187bi' class='paragraph'>
+						 de bźin (6) du lan gñis lan gsum du bzlas | tshig gsum pa la mkhan po źes brjod par bya’o ||&nbsp;</span><span id='3719188bi' class='paragraph'>
+						 mkhan pos thabs yin no źes brjod par bya’o ||&nbsp;</span><span id='3719189bi' class='paragraph'>
+						 rab tu ’byuṅ bar ’dod pas legs so źes brjod par bya’o ||&nbsp;</span><span id='3719190bi' class='paragraph'>
+						 de ni mkhan por gsol ba’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730896bi' class='paragraph'>
+							.&nbsp;</span><span id='3730897bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730898bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730899bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730900bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730901bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730902bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730903bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719191bi' class='paragraph'>
+							de’i ’og tu gaṅ gis de’i (7) skra daṅ kha spu dag ’breg par byed pa’i dge sloṅ la bcol bar bya’o ||&nbsp;</span><span id='3719192bi' class='paragraph'>
+						 des thams cad ’breg par byed nas ||&nbsp;</span><span id='3719193bi' class='paragraph'>
+						 bcom ldan ’das kyis bka’ stsal pa | thams cad breg par mi bya bar ’di ltar gtsug phud gźag par bya źiṅ&nbsp;</span><span id='3719194bi' class='paragraph'>
+						 de’i ’og tu ci gtsug phud breg ma źes dre bar (50b1) bya’o ||&nbsp;</span><span id='3719195bi' class='paragraph'>
+						 gal te mi breg go źes zer na ’o na soṅ śig ces brjod par bya’o ||&nbsp;</span><span id='3719196bi' class='paragraph'>
+						 gal te bregs śig ces zer na brag par bya’o ||&nbsp;</span><span id='3719197bi' class='paragraph'>
+						 de’i ’o tu khrus byed du gźug ste | gal te re źig graṅ pa’i dus yin na ni chu droṅ pos khrus byed du gźug go ||&nbsp;</span><span id='3719198bi' class='paragraph'>
+						 gal te tsha ba’i dus yin (2) na ni chu graṅ mos khrus byed du gźug go ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730904bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719199bi' class='paragraph'>
+							de’i ’og tu mkhan pos lhuṅ bzed daṅ gos dur smig dag sbyin pas bya źiṅ des kyaṅ rkaṅ pa gñis la gtugs nas blaṅ bar bya’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730905bi' class='paragraph'>
+							.&nbsp;</span><span id='3730906bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730907bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719200bi' class='paragraph'>
+							de’i ’og tu mkhan pos bskon par bya źiṅ mtshan med pa’ ma | mtshan gñis pa’ ma | (3) gle ’dams pa ma yin nam źes brtag par bya’o ||&nbsp;</span><span id='3719201bi' class='paragraph'>
+						 bcom ldan ’das kyis brtag par bya’o źes bka’ stsal nas dge sloṅ dag de sgren mor phyuṅ ste rtog par byed pan de ṅo tsha nas bcom ldan ’das kyis bka’ stsal pa | sgren mor phyuṅ ste brtag par mi bya bar śam thabs (4) bskon pa ñid kyi tshe mtshor bar brtag par bya’o ||&nbsp;</span><span id='3719202bi' class='paragraph'>
+						 de ni dus daṅ por bya ba’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730908bi' class='paragraph'>
+							.&nbsp;</span><span id='3730909bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719203bi' class='paragraph'>
+							de’i ’og tu skyabs su ’gro ba rtsom pas rab tu ’byuṅ ba ñe bar bsgrub par bya’o ||&nbsp;</span><span id='3719204bi' class='paragraph'>
+						 ’di ltar ñe bar bsgrub par bya ste | daṅ por ston pa la phyag ’tshal da gźug go ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730910bi' class='paragraph'>
+							.&nbsp;</span><span id='3730911bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730912bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730913bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730914bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730915bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730916bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730917bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730918bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719205bi' class='paragraph'>
+							(5) de’i ’og tu mkhan po la phyag ’tshal du bcu nas mdun du tsog tsog par ’dug tu bcug ste | thal mo sbyor du bcug nas des ’di skad ces brjod par bya ste | mkhan po dgoṅs su gsol | bdag miṅ ’di źes bgyi ba dus ’di nas bzuṅ ste ji srid ’tsho’ bar du rkaṅ (6) gñis rnams kyi mchog saṅs rgyas la skyabs su mchi’o ||&nbsp;</span><span id='3719206bi' class='paragraph'>
+						 ’dod chags daṅ bral ba rnams kyi mchog chos la skyabs su mchi’o ||&nbsp;</span><span id='3719207bi' class='paragraph'>
+						 chogs rnams kyi mchog dge ’dun la skyabs su mchi’o ||&nbsp;</span><span id='3719208bi' class='paragraph'>
+						 bcom ldan ’das de bźin gśegs pa dgra bcom pa yaṅ dag par rdzogs (7) pa’i saṅs rgyas śākya thub pa | śākya ’i seṅ ge | śākya ’i rgyal po gtso bo de rab tu byuṅ ba’i rjes su rab tu ’byuṅ ste khyim pa’i rtags spoṅ ṅo ||&nbsp;</span><span id='3719209bi' class='paragraph'>
+						 rab tu byuṅ ba’i rtags yaṅ dag par len to ||&nbsp;</span><span id='3719210bi' class='paragraph'>
+						 de bźin du lan gñis lan gsum du bzlas | mkhan pos thabs yin no&nbsp;</span><span id='3719211bi' class='paragraph'>
+						 (51a1) źes brjod par bya’o ||&nbsp;</span><span id='3719212bi' class='paragraph'>
+						 rab tu byuṅ bas legs so źes brjod par bya’o ||&nbsp;</span><span id='3719213bi' class='paragraph'>
+						 de ni rab tu byuṅ ba ñe bar sgrub pa’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730919bi' class='paragraph'>
+							.&nbsp;</span><span id='3730920bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730921bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719214bi' class='paragraph'>
+							de’i ’og tu dge tshul ñid du ñe bar sgrub par byed pa’i dge sloṅ la gtad par bya’o ||&nbsp;</span><span id='3719215bi' class='paragraph'>
+						 des kyaṅ mkhan po la ci yoṅs su dag gam źes (2) dris nas yoṅs su dag na skyabs su ’gro ba daṅ | dge tshul ñid du khas blaṅ bas dge tshul ñid du ñe bar bsgrub par bya’o ||&nbsp;</span><span id='3719216bi' class='paragraph'>
+						 ’di ltar ñe bar bsgrub par bya ste | daṅ por ston pa la phyag ’tshal du gźug go ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730922bi' class='paragraph'>
+							.&nbsp;</span><span id='3730923bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730924bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730925bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730926bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730927bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730928bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719217bi' class='paragraph'>
+							de’i ’og tu slob dpon la phyag ’tshal du bcug nas mdun du tsog (3) tsog por ’dug tu bcug ste | thal mo sbyor du bcug nas des ’di skad ces brjod par bya ste | btsun pa dgoṅs su gsol | bdag mi ’di źes bgyi ba dus ’di nas bzuṅ ste | ji srid ’tsho’i bar du rkaṅ gñis rnams kyi mchog saṅs rgyas la skyabs su mchi’o ||&nbsp;</span><span id='3719218bi' class='paragraph'>
+						 ’dod (4) chags daṅ bral ba rnams kyi mchog chos la skyabs su mchi’o ||&nbsp;</span><span id='3719219bi' class='paragraph'>
+						 tshogs rnams kyi mchog dge ’dun la skyabs su mchi’o ||&nbsp;</span><span id='3719220bi' class='paragraph'>
+						 bdag ji srid ’tsho’i bar du dge tshul da btsun pas gzuṅ du gsol | de bźin du lan gñis lan gsum du bzlas | tshig gsum ba la slob (5) dpon gyis źes brjod par bya’o ||&nbsp;</span><span id='3719221bi' class='paragraph'>
+						 slob dpon gyis thabs yin no źes brjod par bya’o ||&nbsp;</span><span id='3719222bi' class='paragraph'>
+						 dge tshul gyis legs so źes brjod par bya’o ||&nbsp;</span><span id='3719223bi' class='paragraph'>
+						 de ni dge tshul gyi sdom pa sbyin pa’i || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730929bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719224bi' class='paragraph'>
+							de’i ’og tu slob dpon ma yin bdag sloṅ gźan gaṅ yaṅ ruṅ ba gcig (6) gis grib tshod gźal bar bya źiṅ skyes bu daṅ | rtsa ba daṅ | ñin mtshan gyi cha daṅ | dus tshod kyaṅ brjod par bya’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730930bi' class='paragraph'>
+							.&nbsp;</span><span id='3730931bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730932bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730933bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730934bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730935bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719225bi' class='paragraph'>
+							de’i ’og tu bslab pa brjod pa khas blaṅ ba’i tshul gyis bya’o ||&nbsp;</span><span id='3719226bi' class='paragraph'>
+						 ’di ltar bya ste | slob dpon dgoṅs su gsol ||&nbsp;</span><span id='3719227bi' class='paragraph'>
+						 ji ltar ’phags pa dgra bcom (7) pa bde dag gis ji srid ’tsho’i bar du srog gcod pa spaṅs te | srog gcod pa las slar log pa de bźin du bdag miṅ ’di źes bgyi bas kyaṅ dus ’di nas bzuṅ ste | ji srid ’tsho’i bar du srog gcod pa spaṅs te | srog gcod pa las slar ldog par bgyi’o ||&nbsp;</span><span id='3719228bi' class='paragraph'>
+						 yan lag (51b1) daṅ po ’dis bdag ’phags pa dgra bcom pa de dag gi bslab pa la rjes su slob po ||&nbsp;</span><span id='3719229bi' class='paragraph'>
+						 rjes su sgrub bo ||&nbsp;</span><span id='3719230bi' class='paragraph'>
+						 rjes su bgyid do ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730936bi' class='paragraph'>
+							.&nbsp;</span><span id='3730937bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730938bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730939bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730940bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730941bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719231bi' class='paragraph'>
+							gźan yaṅ ji ltar ’phags pa dgra bcom pa de dag gis ji srid ’tsho’i bar du ma byin par len pa daṅ | mi tshaṅs par spyod pa daṅ | brdzun du smra (2) ba daṅ | ’bru’i chaṅ daṅ bcos pa’i chaṅ myos par ’gyur ba bag med pa’i gnas daṅ | glu daṅ | gar daṅ | rol mo’i sgru daṅ | phreṅ ba daṅ | spos ñug pa daṅ | rgyan daṅ kha dog ’chaṅ ba daṅ | khri stan mthon po daṅ | khri stan chen po daṅ | dus ma yin pa’i (3) zas daṅ | gser dṅul len pa spaṅs te | gser dṅul len pa las slar log pa de bźin du | bdag miṅ ’di źes bgyi bas kyaṅ dus ’di nas bzuṅ ste ji srid ’tsho’i bar du ma byin par len pa daṅ | mi tshaṅs par spyod pa daṅ | brdzun du smra ba daṅ | ’bru’i chaṅ daṅ (4) bcos pa’i chaṅ myos par ’gyur ba bag med pa’i gnas daṅ | glu gar daṅ | rol mo’i sgra daṅ | phreṅ ba daṅ | spos ñug pa daṅ | rgyan daṅ kha dog ’chaṅ ba daṅ | khri stan mthon po daṅ | khri stan chen po daṅ | dus ma yin pa’i zas daṅ | gser dṅul len pa spaṅs (5) te | gser dṅul len pa las slar ldog par bgyi’o ||&nbsp;</span><span id='3719232bi' class='paragraph'>
+						 yan lag bcu pa ’dis bdag ’phags pa dgra bcom pa de dag gi bslab pa la rjes su slob po ||&nbsp;</span><span id='3719233bi' class='paragraph'>
+						 rjes su sgrub bo ||&nbsp;</span><span id='3719234bi' class='paragraph'>
+						 rjes su bgyid do ||&nbsp;</span><span id='3719235bi' class='paragraph'>
+						 slob dpon gyis thabs yin no źes brjod par bya’o ||&nbsp;</span><span id='3719236bi' class='paragraph'>
+						 dge tshul gyis (6) legs so źes brjod par bya’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730942bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719237bi' class='paragraph'>
+							dge tshul ñid du ñe bar sgrub pa’i cho ga rdzogs sho || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730943bi' class='paragraph'>
+							.&nbsp;</span><span id='3730944bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719238bi' class='paragraph'>
+							de’i ’og tu gal te de lo ñi śu tshaṅ na mkhan pos de’i lhuṅ bzed daṅ chos gos dag btsal bar bya źiṅ las byed pa’i dge sloṅ la gsol ba gdaṅ bar bya | gsaṅ ste ston pa’i dge (7) sloṅ la yaṅ gsol pa gdab par bya | gaṅ dag de’i las kyi gnas su ’jug par ’gyur ba’i dge sloṅ dag la yaṅ gsol ba gdab par bya’o ||&nbsp;</span><span id='3719239bi' class='paragraph'>
+						 dge sloṅ gaṅ dag de’i las kyi gnas su ’jug par ’gyur ba de dag gis kyaṅ der ’du bar ’gyur ba’i tshe zla ba phyed ’das pa’i ñes pa bsdam par | (52a1) bya ba daṅ | bśags par bya ba daṅ | byin gyis brlab par bya ba dag la so sor brtag par bya źiṅ ñes pa śes pa bsdam pa’am | bśags pa’am | byin gyis brlabs pas phyiṅ bcos te ’dug par bya’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730945bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719240bi' class='paragraph'>
+							de’i ’og tu dge ’dun thams cad ’dug ciṅ (2) mthun par gyur pa’am | dkyil ’khor ba yaṅ ruṅ ste | yul dbus su dge sloṅ bcu la sogs pa’i tshogs sam | mtha’ ’khob dag tu gźan med na ’dul ba ’dzin pa daṅ lṅa la sogs pa’i chogs la yaṅ raṅ ste | daṅ por ston pa la phyag ’tshal du gźug go ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730946bi' class='paragraph'>
+							.&nbsp;</span><span id='3730947bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730948bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719241bi' class='paragraph'>
+							(3) de’i ’og tu dge sloṅ re re la phyag gsum gsum ’tshal du gźug go ||&nbsp;</span><span id='3719242bi' class='paragraph'>
+						 phyag ni gñis te | yan lag ldas phyag ’tshal ba daṅ | sgyid pa nas ’khyud pa ste ’dir gaṅ yaṅ ruṅ ṅo ||&nbsp;</span><span id='3719243bi' class='paragraph'>
+						 ’di ni dus daṅ por bya ba’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730949bi' class='paragraph'>
+							.&nbsp;</span><span id='3730950bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730951bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730952bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730953bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730954bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719244bi' class='paragraph'>
+							de’i ’og tu mkhan por gsol ba bya’o ||&nbsp;</span><span id='3719245bi' class='paragraph'>
+						 ’di ltar gsol bar bya ste (4) mkhan po la phyag ’tshal du bcug nas mdun du pha gu’i steṅ du rtswa btiṅ ba la rtiṅ pa gñis kyis mnan nas tsog tsog par ’dug tu bcug ste | thal mo sbyor du bcug nas gal te mkhan po yin na mkhan po źes brjod par bya | slob dpon yin na slob dpon źes brjod par bya | (5) btsun pa yin na btsun pa źes ci rigs par brjod par bya’o źes bstan nas | des ’di skad ces brjod par bya ste | btsun pa dgoṅs su gsol | bdag miṅ ’di źes bgyi ba btsun pa la mkhan por gsol gyis | btsun pa bdag gi mkhan po mdzad du gsol | btsun pa (6) mkhan pos bsñen par rdzogs par bgyi’o ||&nbsp;</span><span id='3719246bi' class='paragraph'>
+						 de bźin du lan gñis lan gsum du bzlas | tshig gsum pa la mkhan po źes brjod par bya’o ||&nbsp;</span><span id='3719247bi' class='paragraph'>
+						 mkhan pos thabs yin no źes brjod par bya’o ||&nbsp;</span><span id='3719248bi' class='paragraph'>
+						 slob mas legs so źes brjod par bya’o ||&nbsp;</span><span id='3719249bi' class='paragraph'>
+						 de ni mkhan por gsol ba’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730955bi' class='paragraph'>
+							.&nbsp;</span><span id='3730956bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730957bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730958bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719250bi' class='paragraph'>
+							(7) de’i ’og tu mkhan po raṅ gis de la chos gos gsum byin gyis brlab par bya’o ||&nbsp;</span><span id='3719251bi' class='paragraph'>
+						 gal te re źig chos gos dras śiṅ drubs pa dag yod na de ltan legs te | ’di ltar byin gyis brlab par bya ste | chos gos gsum po so sor bltab ste slob ma’i phrag pa g-yon par bkal nas gñis ka (52b1) ’greṅ ste | lag pas chos gos snam sbyar bzuṅ nas ’di skad ces brjod pa bya ste | mkhan po dgoṅs su gsol | bdag miṅ ’di źes bgyi ba’i chos gos bgyis lags pa ruṅ pa spyad par ’os ba ’di chos gos snam sbyar du byin gyis brlab po ||&nbsp;</span><span id='3719252bi' class='paragraph'>
+						 de bźin du lan gñis (2) lan gsum du bzlas | mkhan pos thabs yin no źes brjod par bya’o ||&nbsp;</span><span id='3719253bi' class='paragraph'>
+						 slob mas legs so źes brjod par bya’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730959bi' class='paragraph'>
+							.&nbsp;</span><span id='3730960bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730961bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730962bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719254bi' class='paragraph'>
+							de’i ’og tu chos gos bla gos bzuṅ nas des ’di skad ces brjod par bya ste | mkhan po dgoṅs su gsol ||&nbsp;</span><span id='3719255bi' class='paragraph'>
+						 bdag miṅ ’di źes bgyi ba’i chos gos (3) bgyis lags pa ruṅ ba spyad par ’os pa ’di chos gos bla gos su byin gyis brlab po ||&nbsp;</span><span id='3719256bi' class='paragraph'>
+						 de bźin du lan gñis lan gsum du bzlas | mkhan pos thabs yin no źes brjod par bya’o ||&nbsp;</span><span id='3719257bi' class='paragraph'>
+						 slob mas legs so źes brjod par bya’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730963bi' class='paragraph'>
+							.&nbsp;</span><span id='3730964bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730965bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719258bi' class='paragraph'>
+							de’i ’og tu chos gos mthaṅ gos bzuṅ nas (4) des ’di skad ces brjod par bya ste | mkhan po dgoṅs su gsol | bdag miṅ ’di źes bgyi ba’i chos gos bgyis lags pa ruṅ ba spyad par ’os pa ’di chos gos mthaṅ gos su byin gyis brlab po ||&nbsp;</span><span id='3719259bi' class='paragraph'>
+						 de bźin du lan gñis lan gsum du bzlas | mkhan pos thabs (5) yin no źes brjod par bya’o ||&nbsp;</span><span id='3719260bi' class='paragraph'>
+						 slob mas legs so źes brjod par bya’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730966bi' class='paragraph'>
+							.&nbsp;</span><span id='3730967bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730968bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730969bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730970bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730971bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730972bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730973bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730974bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730975bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730976bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730977bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730978bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730979bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730980bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730981bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719261bi' class='paragraph'>
+							de’i ’og tu chos gos dag bskon par bya źiṅ des kyaṅ snam sbyar daṅ bcas pa ñid yin na bsñen par rdzogs pa’i phyir ’dus pa’i dge ’dun la phyag bya’o ||&nbsp;</span><span id='3719262bi' class='paragraph'>
+						 de ni chos gos dras śiṅ drubs pa gsum (6) byin gyis brlab pa’o || ||&nbsp;</span><span id='3719263bi' class='paragraph'>
+						 gal te re źig chos gos dras śiṅ drubs pa dag med na rgyul byin gyis brlab par bya’o ||&nbsp;</span><span id='3719264bi' class='paragraph'>
+						 ’di ltar byin gyis brlab par bya ste | chos gos gsum gyi rgyu so sor bltab ste slob ma’i phrag pa g-yon par bka’ nas gñig ’greṅ ste lag pas (7) chos gos snam sbyar rgyu bzuṅ nas des ’di skad ces brjod par bya ste | mkhan po dgoṅs su gsol | bdag miṅ ’di źes bgyi ba’i chos gos ’di snam sbyar du byin gyis brlab po ||&nbsp;</span><span id='3719265bi' class='paragraph'>
+						 ’tshal na snam phrad dgu pa la sogs par bgyid te | glegs bu phyed daṅ gsum pa sogs (53a1) par bgyi’o ||&nbsp;</span><span id='3719266bi' class='paragraph'>
+						 bar chad ma byuṅ na bkru’o ||&nbsp;</span><span id='3719267bi' class='paragraph'>
+						 brkyaṅ ṅo ||&nbsp;</span><span id='3719268bi' class='paragraph'>
+						 dra’o ||&nbsp;</span><span id='3719269bi' class='paragraph'>
+						 bsdeb bo ||&nbsp;</span><span id='3719270bi' class='paragraph'>
+						 gzugs gdab po ||&nbsp;</span><span id='3719271bi' class='paragraph'>
+						 drub po ||&nbsp;</span><span id='3719272bi' class='paragraph'>
+						 kha bsgyur ro ||&nbsp;</span><span id='3719273bi' class='paragraph'>
+						 yaṅ na ’di la ltan thabs su glan no ||&nbsp;</span><span id='3719274bi' class='paragraph'>
+						 rkyen ji lta ba bźin du bgyis te | chos gos ’di ruṅ pa spyad par ’os pa’o ||&nbsp;</span><span id='3719275bi' class='paragraph'>
+						 de bźin du (2) lan gñis lan gsum du bzlas | mkhan pos thabs yin no źes brjod par bya’o ||&nbsp;</span><span id='3719276bi' class='paragraph'>
+						 slob mas legs so źes brjod par bya’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730982bi' class='paragraph'>
+							.&nbsp;</span><span id='3730983bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730984bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730985bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730986bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730987bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730988bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730989bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730990bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730991bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730992bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730993bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730994bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719277bi' class='paragraph'>
+							de’i ’og tu chos gos bla gos rgyu bzuṅ nas des ’di skad ces brjod par bya ste | mkhan po dgoṅs su gsol | bdag miṅ ’di źes bgyi ba’i (3) chos gos ’di bla gos su byin gyis brlab po ||&nbsp;</span><span id='3719278bi' class='paragraph'>
+						 ’tshal na snam phran bdun par bgyis te | glegs bu phyed daṅ gsum par bgyi’o ||&nbsp;</span><span id='3719279bi' class='paragraph'>
+						 bar chad ma byuṅ na bkru’o ||&nbsp;</span><span id='3719280bi' class='paragraph'>
+						 brkyaṅ ṅo ||&nbsp;</span><span id='3719281bi' class='paragraph'>
+						 dra’o ||&nbsp;</span><span id='3719282bi' class='paragraph'>
+						 bsdeb bo ||&nbsp;</span><span id='3719283bi' class='paragraph'>
+						 gzugs gdab po ||&nbsp;</span><span id='3719284bi' class='paragraph'>
+						 drub po ||&nbsp;</span><span id='3719285bi' class='paragraph'>
+						 kha bsgyur ro ||&nbsp;</span><span id='3719286bi' class='paragraph'>
+						 yaṅ na ’di la lhan thabs (4) su glan no ||&nbsp;</span><span id='3719287bi' class='paragraph'>
+						 rkyen ji lta ba bźin du bgyis te | chos gos ’di ruṅ ba spyad par ’os pa’o ||&nbsp;</span><span id='3719288bi' class='paragraph'>
+						 de bźin du lan gñis lan gsum du bzlas | mkhan pos thabs yin no źes brjod par bya’o ||&nbsp;</span><span id='3719289bi' class='paragraph'>
+						 slob mas legs so źes brjod par bya’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3730995bi' class='paragraph'>
+							.&nbsp;</span><span id='3730996bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730997bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730998bi' class='paragraph'>
+						 .&nbsp;</span><span id='3730999bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731000bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731001bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731002bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731003bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731004bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731005bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731006bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731007bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719290bi' class='paragraph'>
+							de’i ’og tu chos gos mthaṅ gos (5) rgyu bzuṅ nas des ’di skad ces brjod par bya ste | mkhan po dgoṅs su gsol | bdag miṅ ’di źes bgyi ba’i chos gos ’di mthaṅ gos su byin gyis brlab po ||&nbsp;</span><span id='3719291bi' class='paragraph'>
+						 ’tshal na snam phran lṅa par bgyis te | glegs bu phyed daṅ gñis par bgyi’o ||&nbsp;</span><span id='3719292bi' class='paragraph'>
+						 bar chad ma byuṅ na (6) bkru’o ||&nbsp;</span><span id='3719293bi' class='paragraph'>
+						 brkyaṅ ṅo | dra’o ||&nbsp;</span><span id='3719294bi' class='paragraph'>
+						 bsdeb bo ||&nbsp;</span><span id='3719295bi' class='paragraph'>
+						 gzuṅs gdab po ||&nbsp;</span><span id='3719296bi' class='paragraph'>
+						 draṅ po ||&nbsp;</span><span id='3719297bi' class='paragraph'>
+						 kha bsgyur ro ||&nbsp;</span><span id='3719298bi' class='paragraph'>
+						 yaṅ na ’di la lhan thabs su glan no ||&nbsp;</span><span id='3719299bi' class='paragraph'>
+						 rkyen ji lta ba bźin du bgyis te | chos gos ’di ruṅ ba spyad par ’os pa’o ||&nbsp;</span><span id='3719300bi' class='paragraph'>
+						 de bźin du lan gñis lan gsum du bzlas | mkhan (7) pos thabs yin no źes brjod par bya’o ||&nbsp;</span><span id='3719301bi' class='paragraph'>
+						 slob mas legs so źes brjod par bya’o ||&nbsp;</span><span id='3719302bi' class='paragraph'>
+						 de ni chos gos ma dras śiṅ ma drabs pa gsum byin gyis brlab pa’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731008bi' class='paragraph'>
+							.&nbsp;</span><span id='3731009bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731010bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731011bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719303bi' class='paragraph'>
+							de’i ’og tu de’i lhuṅ bzed bstan par bya’o ||&nbsp;</span><span id='3719304bi' class='paragraph'>
+						 ’di ltar bstan par bya ste | dge sloṅ gcig gis (53b1) lhuṅ bzed lag pa g-yon par bźag ste | lag pa g-yas pas bgab nas rgan pa’i mtha’ logs nas dge sloṅ re re’i mdun du ’greṅ ste ’dud pa daṅ bcas pas ’di skad ces brjod par bya ste | btsun pa’am tshe daṅ ldan pa dgoṅs su gsol | tshe daṅ ldan pa miṅ ’di źes (2) bgyi ba’i lhuṅ bzed ’di mi chuṅ ṅam | mi che ’am | mi skya ’am | dge sloṅ thams cad kyis kyaṅ lhuṅ bzed de lta bu ñid ma yin na re re nas lhuṅ bzed bzaṅ ṅo źes brjod par bya’o ||&nbsp;</span><span id='3719305bi' class='paragraph'>
+						 gal te de skad brjod na de lta na legs | gal te mi brjod na ’ga’ tshabs can du ’gyur ro ||&nbsp;</span><span id='3719306bi' class='paragraph'>
+						 (3) de ni lhuṅ bzed bstan pa’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731012bi' class='paragraph'>
+							.&nbsp;</span><span id='3731013bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731014bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731015bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731016bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719307bi' class='paragraph'>
+							de’i ’og tu mkhan po raṅ gis de la lhuṅ bzed byin gyis brlab par bya’o ||&nbsp;</span><span id='3719308bi' class='paragraph'>
+						 ’di ltar byin gyis brlab par bya ste | gñig ’greṅ ste lag pa g-yon par lhuṅ bzed bźag la lag pa g-yas pas bkab nas des ’di skad ces brjod par bya (4) ste | mkhan po dgoṅs su gsol | bdag miṅ ’di źes bgyi ba’i lhuṅ bzed zas la spyad par ’os pa draṅ sroṅ gi snod ’di bslaṅ ba’i snod du byin gyis brlab po ||&nbsp;</span><span id='3719309bi' class='paragraph'>
+						 de bźin du lan gñis lan gsum du bzlas | mkhan pos thabs yin no źes brjod par bya’o ||&nbsp;</span><span id='3719310bi' class='paragraph'>
+						 slob mas legs (5) so źas brjod par bya’o ||&nbsp;</span><span id='3719311bi' class='paragraph'>
+						 de ni lhuṅ bzed byin gyis brlab pa’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731017bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719312bi' class='paragraph'>
+							de’i ’og tu bsñen par rdzogs par bya ba de gros pa’i ñen kor nas bkar te mthoṅ ba’i ñen kor nas bkar te mthoṅ ba’i ñen kor du thal mo sbyor du bcug nas tshogs la mṅon du phyogs par gźag par bya’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731018bi' class='paragraph'>
+							.&nbsp;</span><span id='3731019bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719313bi' class='paragraph'>
+							de’i ’og tu dge sloṅ las byed pas (6) gsaṅ ste ston pa’i dge sloṅ la | mkhan po miṅ ’di źes bya bas miṅ ’di źes bya ba’i gsaṅ ste ston par gsol ba btab pa gaṅ yin źes dri bar bya’o ||&nbsp;</span><span id='3719314bi' class='paragraph'>
+						 gsaṅ ste ston pa gaṅ yin pa des bdag miṅ ’di źes bya ba’o źes brjod par bya’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731020bi' class='paragraph'>
+							.&nbsp;</span><span id='3731021bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731022bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719315bi' class='paragraph'>
+							de’i ’og tu dge sloṅ las byed pas (7) gsaṅ ste ston pa’i dge sloṅ la miṅ ’di źes bya ba khyod mkhan po miṅ ’di źes bya bas miṅ ’di źes bya ba la gsaṅ ste ston par spro’am źes brjod par bya’o ||&nbsp;</span><span id='3719316bi' class='paragraph'>
+						 des kyaṅ spro ’o źes brjod par bya’o ||&nbsp;</span><span id='3719317bi' class='paragraph'>
+						 de ni gsaṅ ste ston pa spro bar byaba’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731023bi' class='paragraph'>
+							.&nbsp;</span><span id='3731024bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731025bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731026bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731027bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719318bi' class='paragraph'>
+							de’i ’og tu dge sloṅ las byad pas gsaṅ (54a1) ste ston pas bar chad dri ba’i phyir gsol ba ’ba’ źig gi las bya’o ||&nbsp;</span><span id='3719319bi' class='paragraph'>
+						 ’di ltar bya ste | ’dug la ’di skad ces brjod par bya’o ||&nbsp;</span><span id='3719320bi' class='paragraph'>
+						 dge ’dun btsun pa rnams gsan du gsol | dge sloṅ miṅ ’di źes bgyi ba ’di mkhan po miṅ ’di źes bgyi bas miṅ ’di źes (2) bgyi ba la gsaṅ ste ston par spron | gal te dge ’dun gyi dus la bab ciṅ bzod na dge ’dun gyis gnaṅ bar mdzod cig daṅ | dge sloṅ miṅ ’di źes bgyi ba ’di mkhan pa miṅ ’di źes bgyi bas miṅ ’di źes bgyi ba la gsaṅ ste ston to ||&nbsp;</span><span id='3719321bi' class='paragraph'>
+						 ’di ni gsol ba’o ||&nbsp;</span><span id='3719322bi' class='paragraph'>
+						 de ni gsaṅ ste (3) ston pa’i gsol ba’i las so || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731028bi' class='paragraph'>
+							.&nbsp;</span><span id='3731029bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731030bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731031bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731032bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731033bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731034bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731035bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731036bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731037bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731038bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731039bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731040bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731041bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731042bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731043bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731044bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731045bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731046bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719323bi' class='paragraph'>
+							de’i ’og tu gsaṅ ste ston pa’i dge sloṅ gis dkyil ’khor ba’i phyi rol du soṅ ste bsñen par rdzogs par bya ba de bdag la phyag ’tshal du bcug nas mdun du tsog tsog por ’dug tu bcug ste | thal mo sbyor du bcug nas ’di skad ces (4) brjod par bya sti | tshe daṅ ldan pa khyod ñon cig ’di ni khyod kyi bden ba’i dus | ’di ni ’byuṅ ba’i dus te | kho bos khyod la chuṅ zad cig dris | khyod ma ’dzem par byos la yin pa la yin źes smros śig | ma yin pa la yaṅ ma yin źes lan thob śig | khyod skyes pa (5) yin nam | des skyes pa lags źes brjod par bya’o ||&nbsp;</span><span id='3719324bi' class='paragraph'>
+						 skyes pa’i dbaṅ po daṅ ldan nam | des ldan źes brjod par bya’o ||&nbsp;</span><span id='3719325bi' class='paragraph'>
+						 lo ñi śu lon nam | des lon źes brjod par bya’o ||&nbsp;</span><span id='3719326bi' class='paragraph'>
+						 khyod kyi chos gos gsum daṅ lhuṅ bzed tshaṅ ṅam | des tshaṅ źes brjod par bya’o ||&nbsp;</span><span id='3719327bi' class='paragraph'>
+						 (6) khyod kyi pha ma gson nam | gal te gson źes zer na | khyod pha mas gnaṅ ṅam źes dri bar bya’o ||&nbsp;</span><span id='3719328bi' class='paragraph'>
+						 des gnaṅ źes brjod par bya’o ||&nbsp;</span><span id='3719329bi' class='paragraph'>
+						 gal te śi zer na | khyod bran ma yin nam | brkus pa ma yin nam | rñed btson ma yin nam | rtsod pa can ma yin nam | btsoṅs (7) pa ma yin nam | rgyal pos bkrabs pa ma yin nam | rgyal po la sdigs pa ma yin nam | rgyal po la gnod pa’i las byed pa ma yin nam | khyod rgyal po la gnod pa’i las byas sam | byed du bcug pa ma yin nam | chom rkun par grags pa ma yin nam | zam ma yin (54b1] ]nam | ma niṅ ma yin nam | dge sloṅ ma sun phyuṅ ba ma yin nam | rku thabs su gnas pa ma yin nam | tha dad du gnas pa ma yin nam | gnas par mi bya ba ma yin nam | mu stegs can ma yin nam | mu stegs can źugs pa ma yin nam | pha bsad pa ma yin nam [(2) ma bsad pa ma yin nam | dgra bcom pa bsad pa ma yin nam | dge ’dun dbyen byas pa ma yin nam | de bźin gśegs pa la ṅan sems kyis khrag phyuṅ ba ma yin nam | sprul pa ma yin nam | dud ’gro ma yin nam źes dri bar bya’o ||&nbsp;</span><span id='3719330bi' class='paragraph'>
+						 des ma lags źes brjod par (3) bya’o ||&nbsp;</span><span id='3719331bi' class='paragraph'>
+						 khyod la la la’i bu lon maṅ yaṅ ruṅ ñuṅ yaṅ ruṅ cuṅ zad chags pa med dam | gal te bu lon chags so źes zer na | khyod bsñen par rdzogs nas ’jam nus sam źes dri bar bya’o ||&nbsp;</span><span id='3719332bi' class='paragraph'>
+						 gal te mi nus źes zer na | ’o na soṅ śig ces brjod par bya’o ||&nbsp;</span><span id='3719333bi' class='paragraph'>
+						 gal (4) te bsñen par rdzogs nas ’jam nus źes zer na | khyod sṅon rab tu byuṅ ba ma yin nam źes brjod par bya’o ||&nbsp;</span><span id='3719334bi' class='paragraph'>
+						 gal te rab tu byuṅ ṅo źes zer na khyod la pham par bgyur ba bźi las ltuṅ ba gaṅ yaṅ ruṅ bźig byuṅ ba ma yin nam | khyod ’babs pa na bslab pa legs par (5) phul lam źes dri bar bya’o ||&nbsp;</span><span id='3719335bi' class='paragraph'>
+						 gal te ltuṅ ba byuṅ ṅo źes zer na | ’o na soṅ śig ces brjod par bya’o ||&nbsp;</span><span id='3719336bi' class='paragraph'>
+						 gal te ma byuṅ ṅo źes zer na | ji ltar khyod da ltar rab tu byuṅ ba yin nam źes dri bar bya’o ||&nbsp;</span><span id='3719337bi' class='paragraph'>
+						 gal te bdag rab tu byuṅ ba yin źes zer na | khyod kyis tshaṅs par (6) spyod pa legs par spyad dam źes dri bar bya’o ||&nbsp;</span><span id='3719338bi' class='paragraph'>
+						 des legs par spyad ces brjod par bya’o ||&nbsp;</span><span id='3719339bi' class='paragraph'>
+						 khyod kyi miṅ ci | khyod kyi mkhan po’i miṅ ci | des bdag miṅ ’di źes bgyi | don gyi slad du mtshan nas smos te bdag gi mkhan po miṅ ’di źes bgyi źes brjod par bya’o ||&nbsp;</span><span id='3719340bi' class='paragraph'>
+						 tshe daṅ (7) ldan pa khyod ñon cig | mi rnams kyi lus la lus kyi nad kyi rnam pa ’di lta bu ’di dag ’byuṅ ba ’di lta ste | mdze daṅ | ’bas daṅ | phol mig daṅ | ’brum phran daṅ | śa bkra daṅ | khyi rdo daṅ | g-ya’ ba daṅ | glog pa daṅ | rkaṅ śu daṅ | skem nad daṅ | skem pa daṅ | brjed (55a1) byed daṅ | bkres ṅab daṅ | skya rbab daṅ | rkaṅ bam daṅ | mtshan bar rdol ba daṅ | rims daṅ | rims drag po daṅ | ñin gcig pa daṅ | ñin gñis pa daṅ | ñin gsum pa daṅ | ñin bźi pa daṅ | ’dus pa daṅ | rims ñin reb daṅ | (2) rtag pa’i rims daṅ | rims ldaṅ dub ba daṅ | śu ba daṅ | gsud pa daṅ | skyigs bu daṅ | lud pa daṅ | dbugs mi bde ba daṅ | lhog pa daṅ | yan lag tu zug pa daṅ | skran daṅ | khrag nad daṅ | mkhris nad daṅ | gźaṅ ’brum daṅ | skrug bro ba daṅ | (3) chus bgags pa daṅ | ṅal ba daṅ | lus tsha ba daṅ | rtsib logs tsha ba daṅ | rus pa la zug pa ste | lus kyi nad ’di lta bu ’di dag las gaṅ yaṅ ruṅ pa daṅ | ’di lta bu gźan dag kyaṅ khyod kyi lus la med dam | desama mchis źes brjod par bya’o ||&nbsp;</span><span id='3719341bi' class='paragraph'>
+						 tshe daṅ ldan (4) pa khyod ñon cig | khyod la da ltar ras gaṅ dris pa de ñid dge ’dun gyi dbus su yaṅ tshaṅs pa mtshuṅs par spyod pa mkhas pa rnams khyod la ’dri bas der yaṅ khyod kyis ma mdzem par byos la yin pa la yaṅ yin źes smros śig | ma yin pa la yaṅ ma yin źes lan (5) thoṅ cig | khyod ma bos kyi bar du ma ’oṅ bar sdod cig | de ni gsaṅ ste bstan pa’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731047bi' class='paragraph'>
+							.&nbsp;</span><span id='3731048bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731049bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731050bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719342bi' class='paragraph'>
+							de’i ’og tu gsaṅ ste ston pa’i dge sloṅ gis rgan pa’i mtha’ logs su ’greṅ ste | ’dud ba daṅ bcas pas ’di skar ces brjod par bya ste | dge ’dun btsun pa rnams (6) gsan du gsol ||&nbsp;</span><span id='3719343bi' class='paragraph'>
+						 bdag gis mkhan po miṅ ’di źes bgyi bas miṅ ’di źes bgyi ba la bar chad kyi chos rnams gsaṅ ste rjes su bstan na | de yaṅ bar chad kyi chos rnams yoṅs su dag go źes kho na ñid mchi na | ci mchi źig gam | thams cad kyis gal te yoṅs su dag (7) na’o źes brjod par bya’o ||&nbsp;</span><span id='3719344bi' class='paragraph'>
+						 gal te de skad brjod na de lta na legs | gal te mi brjod na ’ga’ tshabs can du ’gyur ro ||&nbsp;</span><span id='3719345bi' class='paragraph'>
+						 de ni ’oṅ ba źu ba’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731051bi' class='paragraph'>
+							.&nbsp;</span><span id='3731052bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719346bi' class='paragraph'>
+							de’i ’og tu bsñen par rdzogs par bya ba de dkyil ’khor bar bku gnas rgan pa’i mtha’ logs su phyag ’tshal du bcu ga ste | dge (55b1) sloṅ las khyed bas bsñen par rdzogs pa gsol du gźug par bya’o ||&nbsp;</span><span id='3719347bi' class='paragraph'>
+						 ’di ltar gsol du gźug par bya ste | daṅ por ston pa la phyag ’tshal du gźug go ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731053bi' class='paragraph'>
+							.&nbsp;</span><span id='3731054bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719348bi' class='paragraph'>
+							de’i ’og tu rgan pa’i mtha’ logs su phyag ’tshal du bcug ste | pha gu’i steṅ du rtswa btiṅ pa la rtiṅ pa gñis kyis (2) man na nas tsog tsog por ’dub tu gcug ste | thal mo sbyor du bcug nas des ’di skad ces brjod par bya ste | dge ’dun btsun pa rnams gsan du gsol | bdag miṅ ’di źes bgyi bdon gyi slan du mtshan nas smos te mkhan po miṅ ’di źes bgyibs dge ’dun las bsñen (3) par rdzogs par ’tshal te | bdag miṅ ’di źes bgyibs don gyi slad du mtshan nas smos te | mkhan po miṅ ’di źes bgyi pas dge ’dun las bsñen par rdzogs par gsol na | dge ’dun btsun pa rnams kyis bdag bsñen par rdzogs par mdzad du gsol | dge ’dun (4) btsun pa rnams kyis bdag draṅ bar gsol ||&nbsp;</span><span id='3719349bi' class='paragraph'>
+						 dge ’dun btsun pa rnams kyis bdag rjes su gzuṅ du gsol | dge ’dun btsun pa rnams kyis bdag la rjes su bstan du gsol | thugs brtse ba can dge ’dun btsun pa rnams kyis thugs brtse ba’i slad du bdag la thugs (5) brtse bar mdzad du gsol | de bźin du lan gñis lan gsum du bzlas | de ni bsñen par rdzogs par gsol ba’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731055bi' class='paragraph'>
+							.&nbsp;</span><span id='3731056bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731057bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731058bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731059bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719350bi' class='paragraph'>
+							de’i ’og tu dge sloṅ las byed pas dge ’dun gyi nad du bar chad dri ba’i phyir gsol ba ’ba’ źig gi las bya’o ||&nbsp;</span><span id='3719351bi' class='paragraph'>
+						 ’di ltar bya ste ’dug la ’di skad ces (6) brjod par bya’o ||&nbsp;</span><span id='3719352bi' class='paragraph'>
+						 dge ’dun btsun pa rnams gsan du gsol | maṅ ’di źes bgyi ba ’di mkhan po miṅ ’di źes bgyibs dge ’dun las bsñen par rdzogs par ’tshal te | miṅ ’di źes bgyib ’di mkhan po miṅ ’di źes bgyibs dge ’dun las bsñen par rdzogs par (6) gsol na | gal te dge ’dun gyi dus la bab ciṅ bzod na dge ’dun gyis gnaṅ bar mdzod cig daṅ | bdag gis dge ’dun gyi naṅ du mkhan po miṅ ’di źes bgyibs miṅ ’di źes bgyib la bar chad kyi chos rnams dri bar bgyi’o ||&nbsp;</span><span id='3719353bi' class='paragraph'>
+						 ’di ni gsol ba’o ||&nbsp;</span><span id='3719354bi' class='paragraph'>
+						 de ni naṅ du par (56a1) chad dri ba gsol ba’i las so || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731060bi' class='paragraph'>
+							.&nbsp;</span><span id='3731061bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731062bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731063bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731064bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731065bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731066bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731067bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731068bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731069bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731070bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731071bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731072bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731073bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731074bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731075bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731076bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731077bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731078bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731079bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719355bi' class='paragraph'>
+							de’i ’og tu dge slob las byed pas dge ’dun gyi naṅ du bar chad dri bar bya’o ||&nbsp;</span><span id='3719356bi' class='paragraph'>
+						 ’di ltar dri bar bya ste | las byad pal phyag ’tshal du bcug nas mdun du pha gu’i steṅ du rtswa btiṅ ba la rtiṅ pa gñis kyis man na nas (2) tsog tsog por ’dug tu bcug ste | thal mo sbyor du bcug nas ’di skad ces brjod par bya ste | tshe daṅ ldan pa khyod ñon cig | ’di ni khyod kyi bden pa’i dus | ’di ni ’byuṅ ba’i dus te | kho bos khyod la cuṅ zad cig dris | khyod ma ’dzem par byos la yin pa la yaṅ (3) yin źes smros śig | ma yin pa la yaṅ ma yin źes lan thob cig | khyod skyes pa yin nam | des skyes pa lags źes brjod par bya’o ||&nbsp;</span><span id='3719357bi' class='paragraph'>
+						 skyes pa’i dbaṅ po daṅ ldan nam | des ldan źes brjod par bya’o ||&nbsp;</span><span id='3719358bi' class='paragraph'>
+						 lo ñi śu lon nam | des lon źes brjod par bya’o ||&nbsp;</span><span id='3719359bi' class='paragraph'>
+						 (4) khyod kyi chos gos gsum daṅ lhuṅ bzed tshaṅ ṅam | des tshaṅ źes brjod par bya’o ||&nbsp;</span><span id='3719360bi' class='paragraph'>
+						 khyod kyis ma gson nam | gal te gson źes zer na | khyod pha mas gnaṅ ṅam źes dri bar bya’o ||&nbsp;</span><span id='3719361bi' class='paragraph'>
+						 des gnaṅ źes brjod par bya’o ||&nbsp;</span><span id='3719362bi' class='paragraph'>
+						 gal te śi źes zer na | khyod bran ma yin (5) nam | brkus pa ma yin nam | rñed btson ma yin nam | rtsod pa can ma yin nam | btsoṅs pa ma yin nam | rgyal pos bkrabs ma yin nam | rgyal po la sdigs pa ma yin nam | rgyal po la gnod pa’i las byed pa ma yin nam | khyod rgyal po la gnod pa’i las (6) byas sam byed du bcug pa ma yin nam | chom rkun paṅ grags pa ma yin nam | zam ma yin nam | ma niṅ ma yin nam | dge sloṅ ma sun phyuṅ pa ma yin nam | rku thabs su gnas pa ma yin nam | tha dad du gnas pa ma yin nam | gnas par mi bya ba ma yin nam | mu stegs (7) can ma yin nam | mu stegs can źugs pa ma yin nam | pha bsad pa ma yin nam | ma bsad pa ma yin nam | dgra bcom pa bsad pa ma yin nam | dge ’dun gyi dbyen byas pa ma yin nam | de bźin gśegs pa la ṅan sems kyis khrag phyuṅ ba ma yin nam | (56b1) sprul pa ma yin nam | dud ’gro ma yin nam źes dri par bya’o ||&nbsp;</span><span id='3719363bi' class='paragraph'>
+						 des ma lags źes brjod par bya’o ||&nbsp;</span><span id='3719364bi' class='paragraph'>
+						 khyoṅ la la la’i bu lon maṅ yaṅ ruṅ ñuṅ yaṅ ruṅ cuṅ zad chags pa med dam | gal te bu lon chags so źes zer na | khyod bsñen par rdzogs nas ’jal nus sam (2) źes dri par bya’o ||&nbsp;</span><span id='3719365bi' class='paragraph'>
+						 gal te me nus źes zer na | ’on soṅ źig ces brjod par bya’o ||&nbsp;</span><span id='3719366bi' class='paragraph'>
+						 gal te bsñen par rdzogs nas ’jal nus źes zer na | khyod sṅon rab tu byuṅ ba ma yin nam źes dri bar bya’o ||&nbsp;</span><span id='3719367bi' class='paragraph'>
+						 gal te rab tu byuṅ ṅo źes zer na khyod la pham par ’gyur ba bźi las ltuṅ (3) ba gaṅ yaṅ ruṅ ba źig byuṅ ba ma yin nam | khyod ’babs pa na bslab pa legs par phul lam źes dri bar bya’o ||&nbsp;</span><span id='3719368bi' class='paragraph'>
+						 gal te ltuṅ ba byuṅ ṅo źes zer na | ’o na soṅ śig ces brjod par bya’o ||&nbsp;</span><span id='3719369bi' class='paragraph'>
+						 gal te ma byuṅ ṅo źes zer na | ji ltar khyod da ltar rab tu byuṅ ba yin nam (4) źes dri bar bya’o ||&nbsp;</span><span id='3719370bi' class='paragraph'>
+						 gal te bdag rab tu byuṅ ba yin źes zer na | khyod kyis tshaṅs par spyod pa legs par sbyaṅ ṅam źes dri bar bya’o ||&nbsp;</span><span id='3719371bi' class='paragraph'>
+						 des legs par spyad ces brjod par bya’o ||&nbsp;</span><span id='3719372bi' class='paragraph'>
+						 khyod kyi miṅ ci | khyod kyi mkhan po’i miṅ ci | des bdag miṅ ’di źes (5) bgyi don gyi slod du mtshan nas smos te bdag gi mkhan po miṅ ’di źes bgyi źes brjod par bya’o ||&nbsp;</span><span id='3719373bi' class='paragraph'>
+						 tshe daṅ ldan pa khyod ñon cig | mi rnams kyi lus la lus kyi nad kyi rnam pa ’di lta bu ’di dag ’byuṅ ba ’di lta ste | mdze daṅ | ’bras daṅ | phol mig daṅ | ’brum (6) phran daṅ | śa bkra daṅ | khyi rṅo daṅ | g-ya’ ba daṅ | glog pa daṅ | rkaṅ śu daṅ | skem nad daṅ | skem nad daṅ | skem pa daṅ | brjed byed daṅ | bkres ṅab daṅ | skya rbab daṅ | rkaṅ ba ma daṅ | mtshan par rdol pa daṅ | rims daṅ | rims drag po daṅ | ñin gcig (7) pa daṅ | ñin gñis pa daṅ | ñin gsum pa daṅ | ñin bźi pa daṅ | ’dus pa daṅ | rims ñin re ba daṅ | rtag pa’i rims daṅ | rims ldaṅ dub pa daṅ | śub daṅ | gsud pa daṅ | skyigs bu daṅ | lud pa daṅ | dbugs mi bde ba daṅ | lhog pa (57a1) daṅ | yan lag tu zug pa daṅ | skran daṅ | khrag nad daṅ | ma khris nad daṅ | gźaṅ ’brum daṅ | skyug bro ba daṅ | chus bgags pa daṅ | ṅal pa daṅ | lus tsha ba daṅ | rtsib logs tsha ba daṅ | rus pa la zug pa ste | lus kyi naṅ (2) ’di lta bu ’di dag las gaṅ yaṅ ruṅ ba daṅ | ’di lta bu gźan dag kyaṅ khyod kyi lus la med dam | de sam mchis źes brjod par bya’o ||&nbsp;</span><span id='3719374bi' class='paragraph'>
+						 de ni nad du bar chad dri ba’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731080bi' class='paragraph'>
+							.&nbsp;</span><span id='3731081bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731082bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731083bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731084bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731085bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719375bi' class='paragraph'>
+							de’i ’og tu dge sloṅ las byed pas gsol ba byas te las bya’o ||&nbsp;</span><span id='3719376bi' class='paragraph'>
+						 ’di ltar bya ste | (3) ’dug la ’di skad ces brjod par bya’o ||&nbsp;</span><span id='3719377bi' class='paragraph'>
+						 dge ’dun btsun pa rnams gsan du gsol | miṅ ’di źes bgyi ba ’di mkhan po miṅ ’di źes bgyi bas dge ’dun las bsñen par rdzogs par ’tshal nas | miṅ ’di źes bgyi ba ’di mkhan po miṅ ’di źes bgyi bas dge ’dun (4) las bsñen par rdzogs par gsol te | skyes pa yaṅ lags | skyes pa’i dbaṅ po daṅ yaṅ ldan | lo ñi śu yaṅ lon | ’di’i chos gos gsum daṅ lhuṅ bzed kyaṅ tshaṅ | bar chad kyi chos rnams kyaṅ yoṅs su dag go źes kho na ñid ma chi ste | mid ’di źes bgyi (5) ba ’di mkhan po miṅ ’di źes bgyi bas dge ’dun las bsñen par rdzogs par gsol na | gal te dge ’dun gyi dus la bab ciṅ bzod na dge ’dun gyis gnaṅ bar mdzod cig daṅ | dge ’dun gyis miṅ ’di źes bgyi ba mkhan po miṅ ’di źes bgyi pas bsñen par rdzogs (6) par mdzad do ||&nbsp;</span><span id='3719378bi' class='paragraph'>
+						 ’di ni gsol ba’o ||&nbsp;</span><span id='3719379bi' class='paragraph'>
+						 las ni ’di ltar bya ste | dge ’dun btsun pa rnams gsan du gsol | miṅ ’di źes bgyi ba ’di mkhan po miṅ ’di źes bgyi bas dge ’dun las bsñen par rdzogs par ’tshal nas | miṅ ’di źes bgyi ba ’di mkhan po miṅ ’di źes (7) bgyi bas dge ’dun las bsñen par rdzogs par gsol te | skyes pa yaṅ lags | skyes pa’i dbaṅ po daṅ yaṅ ldan | lo ñi śu yaṅ lon | ’di’i chos gos gsum daṅ lhuṅ bzed kyaṅ tshaṅ | bar chad kyi chos rnams kyaṅ yoṅs su dag go źes kho na ñid mchi ste | (57b1] ]miṅ ’di źes bgyi ba ’di mkhan po miṅ ’di źes bgyi bas dge ’dun las bsñen par rdzogs par gsol na | de’i slad du dge ’dun gyis miṅ ’di źes bgyi pa ’di mkhan po miṅ ’di źes bgyi bas bsñen par rdzogs par mdzad na | tshe daṅ ldan pa gaṅ dag miṅ ’di źes bgyi ba [(2) ’di mkhan po miṅ ’di źes bgyi bas bsñen par rdzogs par mdzad par bzod pa de dag ni caṅ ma gsuṅ śig | gaṅ dag mi bzod pa de dag ni gsuṅ śig | ’di ni las brjod pa daṅ po ste | de bźin du lan gñis lan gsum du bzlas | dge ’dun gyis bzod ciṅ (3) gnaṅ nas dge ’dun gyis miṅ ’di źes bgyi ba ’di mkhan po miṅ ’di źes bgyi bas bsñen par rdzogs par mdzad lags te | ’di ltar caṅ mi gsuṅ pas de de bźin du ’dzin to ||&nbsp;</span><span id='3719380bi' class='paragraph'>
+						 de ni bsñen par rdzogs pa ñe bar sgrub pa’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731086bi' class='paragraph'>
+							.&nbsp;</span><span id='3731087bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731088bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731089bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731090bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719381bi' class='paragraph'>
+							de’i ’og tu gri ba tshod gźal bar bya’o ||&nbsp;</span><span id='3719382bi' class='paragraph'>
+						 (4) bcom ldan ’das kyis grib tshod gźal bar bya’o źes bka’ stsal nas dge sloṅ dag śiṅ bu riṅ po dag gis gri ba tshod ’jal bar byed nas | bcom ldan ’das kyis bka’ stsal pa | śiṅ bu riṅ po dag gis gri ba tshod gźal bar mi bya’o ||&nbsp;</span><span id='3719383bi' class='paragraph'>
+						 dge sloṅ dag gom pa dag ges (5) ’jal bar byed pa na ha caṅ thogs nas bcom ldan ’das kyis bka’ stsal pa | gom pa dag gis gźal bar mi bya bar ’di ltar thur mdag gis gźal bar bya’o ||&nbsp;</span><span id='3719384bi' class='paragraph'>
+						 dge sloṅ dag thur ma riṅ po dag gis ’jam bar byed pa na | de ltan yaṅ ha caṅ thogs nas (6) bcom ldan ’das kyis bka’ stsal pa | thur ma sor bźi tsam gyis gźal bar bya źiṅ thur ma ji tsam yod pa de tsam la skyes ba źes brjod par bya’o ||&nbsp;</span><span id='3719385bi' class='paragraph'>
+						 de ni grib tshod gźal ba’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731091bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719386bi' class='paragraph'>
+							de’i ’og tu ñin mtshan gyi cha brjod par bya ste | sṅa dro daṅ | guṅ daṅ | phyi (7) dro daṅ | mtshan mo’i thun daṅ po daṅ | thun daṅ po’i phyed daṅ | guṅ thun daṅ | guṅ thun gyi phyed daṅ | thun tha ma daṅ | thun tha ma’i phyed daṅ | skya reṅs ma śar ba daṅ | skya reṅs śar ba daṅ | ñi ma ma śar ba daṅ | ñi ma śar ba daṅ | ñi ma brgyad cha śar ba daṅ | (58a1) ñi ma bźi cha śar ba daṅ | guṅ tshigs ma yol ba daṅ | ñi ma bźi cha lus pa daṅ | ñi ma brgyad cha lus pa daṅ | ñi ma ma nub pa daṅ | ñi ma nub pa daṅ | rgyu skar rnams ma śar ba daṅ | rgyu skar rnams śar ba ste | de ni ñin mtshan gyi cha brjod (2) pa’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731092bi' class='paragraph'>
+							.&nbsp;</span><span id='3731093bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731094bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731095bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731096bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731097bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719387bi' class='paragraph'>
+							de’i ’og tu dus tshod brjod par bya ste | dus tshod ni lṅa ste | dgun gyi dus daṅ | dpyid kyi dus daṅ | dbyar gyi dus daṅ | dbyar thuṅ ṅu’i dus daṅ | dbyar riṅ po’i dus so ||&nbsp;</span><span id='3719388bi' class='paragraph'>
+						 de la dgun gyi dus zla pa bźi’o ||&nbsp;</span><span id='3719389bi' class='paragraph'>
+						 dpyid kyi dus ni zla ba bźi’o ||&nbsp;</span><span id='3719390bi' class='paragraph'>
+						 (3) dbyar gyi dus ni zla ba gcig go ||&nbsp;</span><span id='3719391bi' class='paragraph'>
+						 dbyar thuṅ ṅu’i dus ni ñin źag gcig go ||&nbsp;</span><span id='3719392bi' class='paragraph'>
+						 dbyar riṅ po’i dus ni ñin źag gcig gis zla ba gsum du mchog pa ste | de ni dus tshod brjod pa’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731098bi' class='paragraph'>
+							.&nbsp;</span><span id='3731099bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731100bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731101bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731102bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731103bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731104bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731105bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731106bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731107bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731108bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731109bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731110bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731111bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731112bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719393bi' class='paragraph'>
+							de’i ’og tu gnas rnams brjod par bya ste | tshe daṅ ldan pa miṅ ’di źes bya (4) ba khyod ñon cig | bźi po ’di dag ni bcom ldan ’das de bźin gśegs pa dgra bcom pa yaṅ dag par rdzogs pa’i saṅs rgyas mkhyen ciṅ gzigs pa des de ltar rab tu byuṅ ba daṅ bsñen par rdzogs pa’i dge sloṅ gi gnas su gsuṅs te | de la gnas na dge sloṅ (5) legs par gsuṅs pa’i chos ’dul pa la rab tu byuṅ ba raṅ bsñen par rdzogs pa dge sloṅ gi dṅos por ’gyur ro ||&nbsp;</span><span id='3719394bi' class='paragraph'>
+						 bźi gaṅ źe na | gos kyi naṅ na phyag dar khrod ni ruṅ ba rñed kyaṅ sla ba ste | de la gnas na dge sloṅ legs par gsuṅs pa’i chos ’dul ba la rab tu byuṅ (6) ba daṅ bsñen par rdzogs par dge sloṅ gi dṅos por ’gyur ro ||&nbsp;</span><span id='3719395bi' class='paragraph'>
+						 miṅ ’di źes bya ba khyod ji srid mtsho’i bar du phyag daṅ khrod kyi gos kyis ’tsho bar spro’am | des spro źes brjod par bya’o ||&nbsp;</span><span id='3719396bi' class='paragraph'>
+						 lhag par rñed na dar dam | ras yug tshen nam | be’u ras sam | dar la ’am | (7) mon daṅ ram | be’u ras yug chen nam | be’u ras dmar po’am | be’u phrug gam | la mar ram | yul ka śi’i ras phran nam | kha dog ran pa’am | kha dog ṅan pa’am | bal gos sam | śa na’i ras sam | zar ma’i ras sam | ras gos sam | (58b1) du gu la’i ras sam | ko tam pa’i ras sam | ñi ’og gi gos sam | gźan yaṅ gos ruṅ ba gaṅ dge ’dun nam gaṅ zag las rñed na | de yaṅ khyod kyis loṅ la tshod zin par gyis śig | ji ltar khyod gnas ’di lta bus dam ’cha’ ’am | des dam (2) ’cha’o źes brjod par bya’o ||&nbsp;</span><span id='3719397bi' class='paragraph'>
+						 miṅ ’di źes bya ba khyod ñon cig | zas kyi naṅ na bsod sñoms ni ruṅ brñed kyaṅ sla ba ste | de la gnas na dge sloṅ legs par gsuṅs pa’i chos ’dul ba la rab tu byuṅ ba daṅ bsñen par rdzogs pa dge sloṅ gi dṅos por ’gyur ro ||&nbsp;</span><span id='3719398bi' class='paragraph'>
+						 (3) miṅ ’di źes bya ba khyod ji srid ’tsho’i bar du bsod sñoms kyi bras kyis ’tsho bar spro’am | des spro źes brjod par bya’o ||&nbsp;</span><span id='3719399bi' class='paragraph'>
+						 lhag par rñed na ’bras can nam | skyo ma’am | thug pa’am | lṅa ston nam | brgyad ston nam | bcu bźi ston nam | ña ston nam | rtag res (4) ’khor ram | mgron du bos pa’am | ’phral la pos pa’am | spags pa’am | gźan yaṅ zas ruṅ pa gaṅ dge ’dun nam gaṅ zag las rñed na | de yaṅ khyod kyis loṅ la tshod zin thar gyis śig | ji ltar khyod gnas ’di lta bul dam ’cha’ ’am | des dam (5) ’cha’o źes brjod par bya’o ||&nbsp;</span><span id='3719400bi' class='paragraph'>
+						 miṅ ’di źes bya ba khyod ñon cig | gnas mal gyi naṅ na śiṅ druṅ ni ruṅ ba rñed kyaṅ sla bste | de la gnas na dge sloṅ legs par gsuṅs pa’i chos ’dul ba la rab tu byuṅ ba dag bsñen na par rdzogs pa daṅ dge sloṅ gi dṅos por ’gyur (6) ro ||&nbsp;</span><span id='3719401bi' class='paragraph'>
+						 miṅ ’di źes bya ba khyod ji srid ’tsho’i bar du śiṅ druṅ gi gnas mal gyis ’tsho bar spro’am | des spro źes brjod par bya’o ||&nbsp;</span><span id='3719402bi' class='paragraph'>
+						 lhag par rñed na khaṅ pa’am | sda khaṅ ṅam | khaṅ pa brtsigs pa ’am | bsil khaṅ ṅam | sab mos bskor ba’am | ba gam (7) mam | khaṅ bzaṅs sam | sgo khaṅ gi steṅ gi bsil khaṅ ṅam | khaṅ steṅ gi yol khaṅ ṅam | yol khaṅ ṅam | spaṅ leg khaṅ ṅam | sa phug gam | brag phug gam | ri phug gam | rtswa’i spyil bu’am | lo ma’i sbyil bu’am | ’chag sar byas pa’am | (59a1) ’chag sar ma byas pa’am | bya skyibs su byas pa ’am | bya skyibs su ma byas pa’am | gźan yaṅ gnas mal ruṅ ba gaṅ dge ’dun nam gaṅ zag las rñed na | de yaṅ khyod kyis loṅ la tshod zin par gyis śig | ji ltar khyod gnas ’di lte bu la dam (2) ’cha’ ’am | des dam ’cha’o źes brjod par bya’o ||&nbsp;</span><span id='3719403bi' class='paragraph'>
+						 miṅ ’di źes bya ba khyod ñon cig | sman gyi naṅ na bkus te bor ba ni ruṅ ba rñed kyaṅ sla ba ste | de la gnas na dge sloṅ legs par gsuṅs pa’i chos ’dul ba la rab tu byuṅ ba daṅ bsñen par rdzogs pa dge sloṅ gi dṅos (3) po ra ’gyur ro ||&nbsp;</span><span id='3719404bi' class='paragraph'>
+						 miṅ ’di źes bya ba khyod ji srid ’tsho’i bar du bkus te bor ba’i sman gyis ’atsha bar spro ’am | des spro źes brjod par bya’o ||&nbsp;</span><span id='3719405bi' class='paragraph'>
+						 lhag par rñed na źun ra ram | ’bru mar ram | spraṅ rtsi’am | bu ram gyi dbu pa’am ||&nbsp;</span><span id='3719406bi' class='paragraph'>
+						 dus su ruṅ pa’am | thun tshod (4) du ruṅ pa’am | źag bdun pa’am | ’tsho ba’i bar du bcaṅ pa’am | rtsa ba’i sman nam | sdoṅ ba’i sman nam | lo ma’ sman nam | ’bras bu’i sman nam | gźan yaṅ sman ruṅ ba gaṅ dge ’dun nam gaṅ zag rñed na | de yaṅ khyod kyis loṅ la tshod zin bar (5) gyis śig | ji lta khyod gnas ’di lta bu la dam ’cha’ ’am | des dam ’cha’o źes brjod par bya’o ||&nbsp;</span><span id='3719407bi' class='paragraph'>
+						 de ni gnas rnams brjod pa’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731113bi' class='paragraph'>
+							.&nbsp;</span><span id='3731114bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731115bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731116bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719408bi' class='paragraph'>
+							de’i ’og tu ltuṅ bar ’gyur ba’i chos rnams brjod par bya ste | miṅ ’di źes bya ba khyod ñon cig | bźi po ’di (6) dag ni bcom ldan ’das de bźin gśegs pa dgra bcom pa yaṅ dag par rdzogs pa’i saṅs rgyas mkhyen ciṅ gzigs pa des de ltar rab tu byuṅ ba daṅ bsñen par rdzogs pa’i dge sloṅ gi ltuṅ bar ’gyur ba’i chos su gsuṅs te | dge sloṅ gis de byas na byas ma thag tu (7) dge sloṅ du mi ruṅ bar ’gyur | dge sbyoṅ du mi ruṅ | śākya ’i sras kyir mi ruṅ | dge sloṅ gi dṅos po las ñams par ’gyur te | de’i dge sbyod gi tshul źig par ’gyur źiṅ ñams pa bcom pa ltuṅ ba pham par gyur ba ste | de’i dge sbyoṅ gi tshul phyir bslaṅ du med (59b1) par ’gyur ro ||&nbsp;</span><span id='3719409bi' class='paragraph'>
+						 ’di lta ste dper na śiṅ ta la’i mgo bcad na sṅon por ’gyur du mi ruṅ la | ’phel źiṅ rgyas pa daṅ yaṅs par ’gyur du mi ruṅ pa bźin no ||&nbsp;</span><span id='3719410bi' class='paragraph'>
+						 bźi gaṅ źen | ’dod pa daṅ | ’dod pa la źen pa daṅ | ’dod pa la ’chums pa daṅ | ’dod pa (2) la lhag par źen pa ni bcom ldan ’das kyis rnam graṅs du mas smad do ||&nbsp;</span><span id='3719411bi' class='paragraph'>
+						 ’dod pa spaṅs pa ni bsṅags te bor ba daṅ | bstsal ba daṅ | zad pa daṅ | ’dod chags daṅ bral ba daṅ | ’gog pa daṅ | ñe bar źi ba daṅ | nub pa ni bstod do || bkur ro || (3) bsṅags so || sñan par brjod do ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731117bi' class='paragraph'>
+							.&nbsp;</span><span id='3731118bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731119bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731120bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719412bi' class='paragraph'>
+							tshe daṅ ldan pa khyod deṅ phyin chad chags pa’i sems kyis bud med la mig gtad de mig gis blta bar yaṅ mi bya na | gñis kyis gñis smrad de mi tshaṅs par spyod pa ’khrig pa’i chos bsten pa lta smos kyaṅ ci dgos | tshe daṅ ldan (4) pa bcom ldan ’das de bźin gśegs pa dgra bcom pa yaṅ dag par rdzogs pa’i saṅs rgyas mkhyen ciṅ gzigs pa des | dge sloṅ gaṅ dge sloṅ rnams daṅ lhan cig bslab pa mtshuṅs par gyur pas bslab pa ma phul bslab pa ñams par ma byas par mi tshaṅs par spyod pa (5) ’khrag pa’i chos bsten na | tha na duṅ ’gro’i skye gnas su skyes pa daṅ lhan cig kyaṅ ruṅ ste | dge sloṅ de pham par gyur pa yin gyis gnas par mi bya’o źes bya ba ’di bka’ stsal te | dge sloṅ gis gnas de lta bu byas na byas ma thag tu dge sloṅ du mi ruṅ bar ’gyur | dge (6) spyod du mi ruṅ | śākya ’i sras kyir mi ruṅ | dge sloṅ gi dṅos po las ñams par ’gyur te | de’i dge sbyoṅ gi tshul źig par ’gyur źiṅ ñams pa bcom pa pham pa ltuṅ bar ’gyur ba ste | de’i dge sbyoṅ gi tshul phyir bslaṅ du med par ’gyur ro ||&nbsp;</span><span id='3719413bi' class='paragraph'>
+						 ’di lta ste dper na śiṅ (7) ta la’i mgo bcad na sṅon por ’gyur du mi ruṅ la ’phel źiṅ rgyas pa daṅ yaṅs par ’gyur du mi ruṅ ba bźin no ||&nbsp;</span><span id='3719414bi' class='paragraph'>
+						 deṅ phyin chad khyod spyad pa ma yin pa daṅ | bya ba ma yin pa daṅ | spyad pa ma yin pa spaṅ ba de la dran pa daṅ bag yod pas sems śin tu bsruṅ bar brtson par gyis śig | (60a1) ji ltar gnas ’di lta bu la mi spyod dam | des mi spyod ces brjod par bya’o ||&nbsp;</span><span id='3719415bi' class='paragraph'>
+						 tshe daṅ ldan pa khyod ñon cig | ma byin par len pa ni bcom ldan ’das kyis rnam graṅs du mas smad do || ma byin par len pa spaṅs pa ni bstod do || bkur to || (2) bsṅags so || sñan par brjod do ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731121bi' class='paragraph'>
+							.&nbsp;</span><span id='3731122bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731123bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731124bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719416bi' class='paragraph'>
+							tshe daṅ ldan pa khyod deṅ phyin chad rku sems kyis gźan gyi til gyi phub ma yaṅ ma byin par mi blaṅ na | ma śa ka lṅa’am | ma śa ka lṅa las lhag pa lta smos kyaṅ ce dgos | tshe daṅ ldan pa bcom ldan ’das de bźin gśegs pa (3) dag bcom pa yaṅ dag par rdzogs pa’i saṅs rgyas mkhyen ciṅ gzigs pa des | yaṅ dge sloṅ gaṅ gźan dag gi groṅ na ’dug pa’am | dgon pa na ’dug pa ma byin pa rku ba’i graṅs su gtogs pa blaṅs na | ji tsam ma byin par blaṅs pas de rgyal po’am blon po chen pos (4) bzuṅ nas de la ’di skad ces | kye mi khyod ni rkun ma’o || byis pa’o || blun pa’o || rku ba’o źes zer źiṅ gsod dam | ’chiṅ ṅam | sbyug kyaṅ ruṅ ste | dge sloṅ de ltar ma byin par len na dge sloṅ de yaṅ pham par gyur ba yin pas gnas par mi bya’o źes bya ba ’di bka’ (5) stsal te | dge sloṅ gis gnas de lta bu byas na byas ma thag tu dge sloṅ du mi ruṅ bar ’gyur | dge sbyoṅ du mi ruṅ | śākya ’i sras kyir mi rub | dge sloṅ gi dṅos po las ñams par ’gyur te | de’i dge sbyoṅ gi tshul źig par ’gyur źiṅ | ñams pa bcom pa ltuṅ (6) ba pham par ’gyur ba ste | de’i dge sbyoṅ gi tshul phyir bslad du med par ’gyur ro ||&nbsp;</span><span id='3719417bi' class='paragraph'>
+						 ’di lta ste dper na śiṅ ta la’i mgo btsad na sṅon por ’gyur du mi ruṅ la | ’phel śiṅ rgyas pa daṅ yaṅs par ’gyur du mi ruṅ pa bźin no ||&nbsp;</span><span id='3719418bi' class='paragraph'>
+						 deṅ phyin chad khyod sbyad pa ma yin pa daṅ | bya (7) pa ma yin pa dag spyad pa ma yin pa spaṅ ba de la dran pa ṅaṅ bag yoṅ pas sems śin tu bsruṅ bar brtson par gyis śig | ji lta gnas ’di lta bu la mi spyod dam | des mi spyod ces brjod par bya’o ||&nbsp;</span><span id='3719419bi' class='paragraph'>
+						 tshe daṅ ldan pa khyod ñon cig | srog gcod pa ni bcom ldan ’das kyis (60b1) rnam graṅs du mas smad do || srog gcod pa spaṅs pa ni bstod do || bkur ro || bsṅags so || sñan par brjod do ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731125bi' class='paragraph'>
+							.&nbsp;</span><span id='3731126bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731127bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731128bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719420bi' class='paragraph'>
+							tshe daṅ ldan pa khyod deṅ phyin chad khyod kyi than bsam bźin du srog chags grog sbor yaṅ gsad par mi bya na | mi ’am mir chags pa lta smos (2) kyaṅ ci dgos | tshe daṅ ldan pa bcom ldan ’das de bźin gśegs pa dgra bcom pa yaṅ dge par rdzogs pa’i saṅs rgyas mkhyen ciṅ gzigs pa des | yaṅ dge sṅoṅ gaṅ mi ’am mir chags pa la bsams bźin pa raṅ gis lag dar te srog gcod dam | de la mtshon (3) byin nam | de la mtshon thogs pa gñer tam | de ’chir bcug gam | de la ’chi ba’i bsṅags pa brjod kyaṅ ruṅ ste | de la ’di skad ces | kye mi khyod ’tsho ba sdig pa mi gtsaṅ pa ṅan pa ’dis ci źig bya | kye mi khyod gson pa bas śi bla’o źes zer źiṅ sems kyi ’bod pa (4) daṅ | sems kyi kun du rtog pa dag gi rnam graṅs du mas de ’chir bcug gam | de la ’chi ba’i bsṅags pa brjod de de yaṅ rtsom pa des dus byas na | dge sloṅ de yaṅ pham par gyur pa yin gyis gnas par mi bya’o źes bya ba ’di bka’ stsal te | dge sloṅ gis gnas de lta (5) bu byas na byas ma thag tu dge sloṅ du mi ruṅ bar ’gyur | dge sbyoṅ du ma ruṅ | śākya ’i sras kyir mi ruṅ | dge sloṅ gi dṅos po las ñams par ’gyur te | de’i dge sbyoṅ gi tshul źig bar ’gyur źiṅ ñams pa bcom pa ltuṅ ba pham par ’gyur ba ste | de’i dge sbyoṅ gi tshul (6) phyir bslaṅ du med par ’gyur ro ||&nbsp;</span><span id='3719421bi' class='paragraph'>
+						 ’di lta ste dper na śiṅ ta la’i mgo bcad na sṅon por ’gyur du mi ruṅ la | ’phel śiṅ rgyas pa daṅ yaṅs par ’gyur du mi ruṅ ba bźin no ||&nbsp;</span><span id='3719422bi' class='paragraph'>
+						 der phyin chad khyod sbyad pa ma yin pa daṅ | bya ba ma yin pa daṅ | spyad pa ma yin pa spaṅ ba de la dran (7) pa daṅ bag yod pas sems śin tu bsruṅ par brtson par gyis śig | ji ltar gnas ’di lta bu la mi spyod dam | des ma spyod ces brjod par bya’o ||&nbsp;</span><span id='3719423bi' class='paragraph'>
+						 tshe daṅ ldan pa khyod ñon cig | brdzun du smra ba ni bcom ldan ’das kyis rnam graṅs du mas smad do || brdzun du smra ba spaṅs pa (61a1) ni bstod do || bkur ro || bsdags so || sñan par brjod do ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731129bi' class='paragraph'>
+							.&nbsp;</span><span id='3731130bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731131bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719424bi' class='paragraph'>
+							tshe daṅ ldan pa khyod deṅ phyin chad tha na bźad gad bya bar bsams te śes bźin du brdzun du smra bar yar mi bya na | bsams bźin du mi’i chos bla ma smra ba lta smos kyaṅ ci dgos | tshe daṅ ldan pa (2) bcom ldan ’das de bźin gśegs pa dgra bcom pa yaṅ dag par rdzogs pa’i saṅs rgyas mkhyen ciṅ gzigs pa des | yaṅ dge sloṅ gaṅ mṅon par mi śes śiṅ yoṅs su mi śes la mi’i chos bla ma mtha’ daṅ | ’phags pa daṅ | bye brag thob pa daṅ | śes pa daṅ | mthoṅ (3) ba daṅ | reg par spyod pa mad la | med bźin du ’di śes so ||&nbsp;</span><span id='3719425bi' class='paragraph'>
+						 ’di mthoṅ ṅo źes khas ’ches pa las de ltuṅ ba byuṅ ba rnam par dag par ’dod nas dus gźan źig na dris kyaṅ ruṅ ma dris kyaṅ ruṅ ’di skad ces | tshe daṅ ldan pa dag bdag gis ni mi śes par śes so źes smras | ma mthoṅ (4) par mthoṅ ṅo źes smras te | gsob gsog brdzun du smras so źes zer na mṅon pa’i ṅa rgyal ma gtogs te | dge sloṅ de yaṅ pham par gyur pa yin gyis gnas par mi bya’o źes bya ba ’di bka’ stsal te | ci źig śes źe na | sdug bsṅal śes so ||&nbsp;</span><span id='3719426bi' class='paragraph'>
+						 kun ’byuṅ ba daṅ | ’gog (5) pa daṅ | lam śes so ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731132bi' class='paragraph'>
+							.&nbsp;</span><span id='3731133bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731134bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731135bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731136bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731137bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731138bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731139bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731140bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731141bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731142bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731143bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731144bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731145bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731146bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731147bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731148bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731149bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731150bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731151bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731152bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731153bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731154bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719427bi' class='paragraph'>
+							ci źig mthoṅ źe na | lha rnams mthoṅ ṅo ||&nbsp;</span><span id='3719428bi' class='paragraph'>
+						 klu rnams daṅ | gnod sbyin rnam la daṅ | nam mkha’ ldiṅ rnams daṅ | dri za rnams daṅ | mi ’am ci rnams daṅ | lto ’phye chen po rnams daṅ | yi dgas rnams daṅ | śa za rnams daṅ | (6) grul bum rnams daṅ | srul po rnams daṅ | lus srul po rnams daṅ | rdul khrod kyiṅ śa za rnams mthoṅ ṅo ||&nbsp;</span><span id='3719429bi' class='paragraph'>
+						 lha rnams kyis kyaṅ bdag mthoṅ ṅo ||&nbsp;</span><span id='3719430bi' class='paragraph'>
+						 klu rnams daṅ | gnod sbyin rnams daṅ | nam mkha’ ldiṅ rnams daṅ | dri za rnams daṅ | mi’am (7) ci rnams daṅ | lto ’phye chen po rnams daṅ | yi dgas rnams daṅ | śa za rnams daṅ | grul bu ma rnams daṅ | srul bo rnams daṅ | lus srul po rnams daṅ | rdul khrod kyi śa za rnams kyis kyaṅ bdag mthoṅ ṅo ||&nbsp;</span><span id='3719431bi' class='paragraph'>
+						 lha rnams kyi sgra thos so ||&nbsp;</span><span id='3719432bi' class='paragraph'>
+						 klu rnams daṅ | (61b1) gnod sbyin rnams daṅ | nam mkha’ ldiṅ rnams daṅ | dri za rnams daṅ | mi ’am ci rnams daṅ | lto ’phye chen po rnams daṅ | yi dgas rnams daṅ | śa za rnams daṅ | grul bum rnams daṅ | srul po rnams daṅ | lus srul po rnams daṅ | rdul khrod kyi śa za (2) rnams kyi sgra thos so ||&nbsp;</span><span id='3719433bi' class='paragraph'>
+						 lha rnams kyis kyaṅ bdag gi sgra thos so ||&nbsp;</span><span id='3719434bi' class='paragraph'>
+						 klu rnams daṅ | gnod sbyin rnams daṅ | nam mkha’ ldiṅ rnams daṅ | dri za rnams daṅ | mi ’am ci rnams daṅ | lto ’phye chen po rnams daṅ | yi dgas rnams daṅ | śa za rnams daṅ | grul (3) bum rnams daṅ | srul po rnams daṅ | lus srul po rnams daṅ | rdul khrod kyi śa za rnams kyis kyaṅ bdag gi sgra thos so ||&nbsp;</span><span id='3719435bi' class='paragraph'>
+						 lha rnams pa lta ba’i phyir ’gro’o ||&nbsp;</span><span id='3719436bi' class='paragraph'>
+						 klu rnams daṅ | gnod sbyin rnams daṅ | nam mkha’ ldiṅ rnams daṅ | dri za rnams daṅ | mi ’am (4) ci rnams daṅ | lto ’phye chen po rnams daṅ | yi dgas rnams daṅ | śa za rnams daṅ | grul bum rnams daṅ | srul po rnams daṅ | lus srul po rnams daṅ | rdul khrod kye śa za rnams blta ba’i phyir ’gro’o ||&nbsp;</span><span id='3719437bi' class='paragraph'>
+						 lha rnams bdag blta ba’i phyir ’oṅ ṅo ||&nbsp;</span><span id='3719438bi' class='paragraph'>
+						 klu rnams (5) daṅ | gnod sbyin rnams daṅ | nam mkha’ ldiṅ rnams daṅ | dri za rnams daṅ | mi ’am ci rnams daṅ | lto ’phye chen po rnams daṅ | yi dgas rnams daṅ | śa za rnams daṅ | grul bum rnams daṅ | srul po rnams daṅ | lus srul po rnams daṅ | rdul (6) khrod kyi śa za rnams bdag blta ba’i phyir ’oṅ ṅo ||&nbsp;</span><span id='3719439bi' class='paragraph'>
+						 lha rnams daṅ lhan cig gtam ’dre bar byed | phebs par smra bar byed | so sor kun dga’ bar byed | rtag tu yaṅ lhan cig gnas par byed do ||&nbsp;</span><span id='3719440bi' class='paragraph'>
+						 klu rnams daṅ | gnod sbyin rnams daṅ | nam mkha’ ldiṅ rnams (7) daṅ | dri za rnams daṅ | mi ’am ci rnams daṅ | lto ’phye chen po rnams daṅ | yi dgas rnams daṅ | śa za rnams daṅ | grul bum rnams daṅ | srul po rnams daṅ | lus srul po rnams daṅ | rdul khrod kyi śa za rnams daṅ lhan cig gtam ’dre bar byed | phebs (62a1) par smra bar byed ||&nbsp;</span><span id='3719441bi' class='paragraph'>
+						 so sor kun dga’ bar byed | rta gtu yaṅ lhan cig gnas par byed do ||&nbsp;</span><span id='3719442bi' class='paragraph'>
+						 lha rnams bdag daṅ lhan cig gtam ’dre bar byed | phebs par smra bar byed | so sor kun dga’ bar byed | rtag tu yaṅ lhan cig gnas par byed do ||&nbsp;</span><span id='3719443bi' class='paragraph'>
+						 (2) klu rnams daṅ | gnod sbyin rnams daṅ | nam mkha’ ldiṅ rnams daṅ | dri za rnams daṅ | mi ’am ci rnams daṅ | lto ’phye chen po rnams daṅ | yi dgas rnams daṅ | śa za rnams daṅ | grul bum rnams daṅ | srul bo rnams daṅ | lus srul po rnams (3) daṅ | rdul khrod kyi śa za rnams bdag daṅ lhan cig gtam ’dre bar byed | phebs par smra bar byed | so sor kun dga’ bar byed | rtag tu yaṅ lhan cig gnas par byed do ||&nbsp;</span><span id='3719444bi' class='paragraph'>
+						 ma thob bźin du bdag gis mi rtag pa’i ’du śes daṅ | mi rtag pa la sdug bsṅal pa’i (4) ’du śes daṅ | sdug bsṅal ba la bdag med pa’i ’du śes daṅ | zas la mi mthun pa’i ’du śes daṅ | ’jig rten thams cad la mṅon par mi dga’ ba’i ’du śes daṅ | ñes dmigs kyi ’du śes daṅ | spoṅ pa’i ’du śes daṅ | ’dod chags daṅ bral ba’i (5) ’du śes daṅ | ’gog pa’i ’du śes daṅ | ’chi ba’i ’du śes daṅ | mi sdug pa’i ’du śes daṅ | rnam par sṅos pa’i ’du śes daṅ | rnam par rnags par ’du śes daṅ | rnam par bam pa’i ’du śes daṅ | rnam par ’dus gźigs pa’i ’du śes daṅ | (6) rnam par zos pa’i ’du śes daṅ | rnam par dmar ba’i ’du śes daṅ | rnam par ’thor ba’i ’du śes daṅ | rus goṅ gi ’du śes daṅ | stoṅ pa ñid du so sor rtog pa’i ’du śes thob bo ||&nbsp;</span><span id='3719445bi' class='paragraph'>
+						 ma tho ba bźin du bdag gis bsam gtan daṅ po daṅ | gñis pa daṅ | gsum (7) pa daṅ | bźi pa daṅ | byams pa daṅ | sñiṅ rje daṅ | dga’ ba daṅ | btaṅ sñoms daṅ | nam mkha’ mtha’ yas skye mched daṅ | rnam śes mtha’ yas skye mched daṅ | ci yaṅ med pa’i skye mched daṅ | ’du śes med ’du śes med min skye mched daṅ | rgyun (62b1) du źugs pa’i ’bras bu daṅ | lan gcig phyir ’oṅ ba’i ’bras bu daṅ | phyir mi ’oṅ ba’i ’bras bu daṅ | dgra bcom pa ñid kyi ’bras bu daṅ | rdzu ’phrul gyi yul daṅ | lha’i rna ba daṅ | sems kyi rnam guṅs daṅ | sṅon gyi gnas daṅ | ’chi ’pho daṅ | skye ba (2) daṅ zag pa zad pa thob bo ||&nbsp;</span><span id='3719446bi' class='paragraph'>
+						 bdag ni dgra bcom pa rnam par thar pa brkyad la bsam gtan pa daṅ gñi ga’i cha las rnam par grol ba yin no źes bya ba ste | dge sloṅ gis gnas de lta bu byas na byas ma thag tu dge spoṅ du mi ruṅ par ’gyur | dge sbyoṅ du mi ruṅ | śākya ’i sras (3) kyir mi ruṅ | dge sloṅ gi dṅos po las ñams par ’gyur te | de’i dge sbyoṅ gi tshul źig par ’gyur źiṅ | ñams pa bcom pa ltuṅ ba pham par ’gyur ba ste | de’i dge sbyoṅ gi tshul phyir bslad du med par ’gyur ro ||&nbsp;</span><span id='3719447bi' class='paragraph'>
+						 ’di lta ste dper na śiṅ ta la’i mgo bcad na sdon (4) por ’gyur du ma ruṅ la ’phel źiṅ rgyas pa daṅ yaṅs par ’gyur du mi ruṅ ba bźin no ||&nbsp;</span><span id='3719448bi' class='paragraph'>
+						 deṅ phyin chad khyod spyad pa ma yin pa daṅ | bya ba ma yin pa daṅ | spyad pa ma yin pa spaṅ ba de la dran pa daṅ bag yod pas sems śin tu bsruṅ bar brtson par gyis śig | ji ltar (5) gnas ’di lta bu la mi spyod dam | des mi spyod ces brjod par bya’o ||&nbsp;</span><span id='3719449bi' class='paragraph'>
+						 de ni ltuṅ bar ’gyur ba’i chos rnams brjod pa’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731155bi' class='paragraph'>
+							.&nbsp;</span><span id='3731156bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731157bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719450bi' class='paragraph'>
+							de’i ’og tu dge sbyoṅ du byed pa’i chos rnams brjod par bya ste | tshe daṅ ldan pa khyod ñon cig | bźi po ’di dag ni btsom ldan ’das (6) de bźin gśegs pa dgra bcom pa yaṅ dag par rdzogs pa’i saṅs rgyas mkhyen ciṅ gzigs pa des de ltar rab tu byuṅ ba daṅ bsten par rdzogs pa’i dge sloṅ gi dge sbyoṅ du byed pa’i chos su gsuṅs te | bźi gaṅ źe na | tshe daṅ ldan pa khyod kyis deṅ phyin chad gśe yaṅ slar (7) mi gśe bar bya ba daṅ | khros kyaṅ slar mi khro bar bya ba daṅ | brdegs kyaṅ slar mi brdeg par bya ba daṅ | mtshaṅ brus kyaṅ slar mtshaṅ mi bru bar bya’o ||&nbsp;</span><span id='3719451bi' class='paragraph'>
+						 ji ltar gnas ’di lta bu la spyod dam | des spyod ces brjod par bya’o ||&nbsp;</span><span id='3719452bi' class='paragraph'>
+						 de ni dge sbyoṅ du byed pa’i chos rnams brjod (63a1) pa’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731158bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719453bi' class='paragraph'>
+							de’i ’og tu mchog tu ’dod par bya ba yaṅ dag pa ñid kyis rdzogs pa ñid brjod par bya ste | tshe daṅ ldan pa khyod ñon cig | khyod sṅon bdag legs par gsuṅs pa’i chos ’dul ba la rab tu byuṅ bdaṅ bsñen par rdzogs pa dge sloṅ gi dṅos po thob kyaṅ (2) cim ruṅ sñam du smon pa gaṅ yin pa deṅ khyod mkhan por ’os pa daṅ | slob dpon du ’os pa gñis daṅ | dge ’dun mthun pa daṅ | gsol ba daṅ bźi’i las mig yo pa gźag par mi ’os pas rab tu byuṅ źiṅ bsñen par rdzogs so ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731159bi' class='paragraph'>
+							.&nbsp;</span><span id='3731160bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731161bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731162bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731163bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719454bi' class='paragraph'>
+							de ni mchog tu ’dod par bya ba yaṅ dag (3) pa ñid kyis rdzogs pa ñid brjod pa’o || ||&nbsp;</span><span id='3719455bi' class='paragraph'>
+						 de’i ’o tu tshul khrims kyis mñam par gyur pa ñid sgrub pa la ṅes par sbyar bar bya ste | tshe daṅ ldan pa khyod ñon cig | bsñen par rdzogs nas lo brgya lon pa’i dge sloṅ gis bslab pa gaṅ la bslab par bya ba ṅe la de riṅ bsñen (4) par rdzogs pas kyaṅ bslab bo ||&nbsp;</span><span id='3719456bi' class='paragraph'>
+						 de riṅ bsñen par rdzogs pa’i dge sloṅ gis bslab pa gaṅ la bslab par bya ba de la bsñen par rdzogs nas lo brgya lon pas kyaṅ bslab po ||&nbsp;</span><span id='3719457bi' class='paragraph'>
+						 de ltar na tshul khrims ñid kyis mñam pa daṅ | bslab pa ñid kyis mñam pa daṅ | so sor thar (5) pa’i mdo ’don pa ñid kyis mñam pa de khyod kyis deṅ phyin chad bsgrub par bya’i mi bsgrub par mi bya’o ||&nbsp;</span><span id='3719458bi' class='paragraph'>
+						 de ni tshul khrims kyis mñam par gyur pa ñid sgrub pa la ṅes par sbyar ba’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731164bi' class='paragraph'>
+							.&nbsp;</span><span id='3731165bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731166bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731167bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731168bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719459bi' class='paragraph'>
+							de’i ’og tu tshul daṅ ’brel pa’i gzugs brñan la ṅes par spyar bar bya ste | deṅ phyin (6) chad khyod kyis mkhan po la pha’i ’du śes ñe bar gźag par bya’o ||&nbsp;</span><span id='3719460bi' class='paragraph'>
+						 mkhan pos kyaṅ khyod la bu’i ’du śes ñe bar gźag par bya’o ||&nbsp;</span><span id='3719461bi' class='paragraph'>
+						 khyod kyis deṅ phyin chad mkhan po la ji srid ’tsho’i bar du bsñen bkur bya’o ||&nbsp;</span><span id='3719462bi' class='paragraph'>
+						 mkhan pos kyaṅ khyod śi ’am sos kyi bar du nad g-yog (7) bya’o ||&nbsp;</span><span id='3719463bi' class='paragraph'>
+						 de ni tshul daṅ ’brel pa’i gzugs brñan la ṅes par sbyar ba’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731169bi' class='paragraph'>
+							.&nbsp;</span><span id='3731170bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719464bi' class='paragraph'>
+							de’i ’og tu dul bar gnas pa ñid la ṅes par sbyar bar bya ste | deṅ phyin chad khyod kyis tshaṅs pa mtshuṅs par spyod pa rnams daṅ | gnas brtan rnams daṅ | bar ma rnams daṅ | gsar bu (63b1) rnams la gus pa daṅ bcas pa daṅ | źe sa daṅ bcas pa daṅ | ’jigs pa daṅ bcas pa’i dbaṅ du ’gyur bar gnas par bya’o ||&nbsp;</span><span id='3719465bi' class='paragraph'>
+						 de ni dul bar gnas pa ñid la ṅes par sbyar ba’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731171bi' class='paragraph'>
+							.&nbsp;</span><span id='3731172bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731173bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731174bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719466bi' class='paragraph'>
+							de’i ’og tu dgos pa rjes su bsgrub pa la ṅes par sbyar bar bya ste | deṅ phyin chad khyod kyis luṅ mnod (2) par bya | bklag par bya | kha ton du bya’o ||&nbsp;</span><span id='3719467bi' class='paragraph'>
+						 phuṅ po la mkhas pa daṅ | khams la mkhas pa daṅ | skye mched la mkhas pa daṅ | rten ciṅ ’brel par ’byuṅ ba la mkhas pa daṅ | gnas daṅ gnas ma yin pa la mkhas par bya’o ||&nbsp;</span><span id='3719468bi' class='paragraph'>
+						 ma thob pa thob par bya ba daṅ | ma rtogs pa rtogs par (3) bya ba daṅ | mṅon du ma byas pa mṅon du bya ba’i phyir khyod kyis brtson pa mi ’dor bar bya’o ||&nbsp;</span><span id='3719469bi' class='paragraph'>
+						 de ni dgos pa rjes su bsgrub pa la ñe bar sbyar bar bya ba’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731175bi' class='paragraph'>
+							.&nbsp;</span><span id='3731176bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731177bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719470bi' class='paragraph'>
+							de’i ’og tu ma brjod pa yaṅ dag par blaṅs pa yoṅs su śes pa’i sgrub par ’gyur ba ñid kyaṅ brjod par bya ste | ’di dag ni kho bos khyod la (4) bslab pa’i gźi che loṅ che loṅ tsam źig brjod par brad de | gźan dag ni zla ba phyed phyed ciṅ so sor thar pa’i mdo gdon pa ’don pa’i tshe thos par ’gyur ro ||&nbsp;</span><span id='3719471bi' class='paragraph'>
+						 gźan dag kyaṅ slob dpon daṅ | mkhan po daṅ | mkhan po gcig pa daṅ | slob dpon gcig pa daṅ | gtam ’dres pa daṅ | phebs par smra (5) ba daṅ | smos ’drin daṅ | ’grogs bśes rnams kyaṅ rgya cher ston par ’gyur ro ||&nbsp;</span><span id='3719472bi' class='paragraph'>
+						 de ni ma brjod pa yaṅ dag par blaṅs pa yoṅs su śes pa’i sgrub par ’gyur ba ñid brjod pa’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731178bi' class='paragraph'>
+							.&nbsp;</span><span id='3731179bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731180bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731181bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731182bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731183bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731184bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719473bi' class='paragraph'>
+							de’i ’og tu gsu pa la yaṅ ṅes par sbyar bar bya ste | śes rab mchog gi bstan pa la ||&nbsp;</span><span id='3719474bi' class='paragraph'>
+						 khyod ni bsñen par (6) rdzogs par gyur ||&nbsp;</span><span id='3719475bi' class='paragraph'>
+						 dal daṅ ’byor pa rñed dka’ bas ||&nbsp;</span><span id='3719476bi' class='paragraph'>
+						 ’di dag ji lta bźin du sgrubs | mdzes pa rab tu dbyuṅ ba daṅ | yoṅs su dag pa bsñen rdzogs par ||&nbsp;</span><span id='3719477bi' class='paragraph'>
+						 rdzogs saṅs rgyas kyis rab mkhyen te ||&nbsp;</span><span id='3719478bi' class='paragraph'>
+						 bden pa’i mtshan gyis bka’ stsal to ||&nbsp;</span><span id='3719479bi' class='paragraph'>
+						 de ni gus pa la ṅes par sbyar ba’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731185bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719480bi' class='paragraph'>
+							de’i ’og tu bsgrub par (7) bya ba thabs brjod pa daṅ bcas pa la ṅes par sbyar bar bya ste | tshe daṅ ldan pa khyod bsñen par rdzogs thin gyis bag yod par sgrubs śig | de ni bsgrub par bya ba thabs brjod pa daṅ bcas pa la ṅes par sbyar ba’o ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731186bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719481bi' class='paragraph'>
+							dge sloṅ bsñen par rdzogs par bya ba’i chog rdzogs so || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731187bi' class='paragraph'>
+							.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3730843";
+							kilderef = "Pravr-v Pravr-v I, GMB  - Pravr-v I, GMB ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3719482bi' class='paragraph'>
+							’dul ba (64a1) gźi | bam po drug pa |&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3719138";
+							kilderef = "Pravr-v Kj D ’dul ba ka  47a6 - Kj D ’dul ba ka 63b64";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'></div><div class='textvar' style='width:49%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=0a1bd6fa-d14c-11e4-bbf3-001cc4ddf0f4</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>

@@ -1,0 +1,171 @@
+id: I4D4ED6AF
+source: https://www2.hf.uio.no/polyglotta/index.php?page=library&bid=2
+source_file: null
+initial_creation_type: input
+imported: '2022-05-27T17:01:43.249434'
+last_modified: '2022-05-27T17:01:43.249447'
+parser: null
+source_metadata:
+  title: 'MSV 1,01: Pravrajyāvastu'
+  language: sa
+  base:
+    f887A:
+      title: Pravrajyavastupiṇḍoddāna
+      base_file: f887A.txt
+      order: 1
+    f2CF1:
+      title: Uddāna
+      base_file: f2CF1.txt
+      order: 2
+    f9EE5:
+      title: Historical events
+      base_file: f9EE5.txt
+      order: 3
+    f0355:
+      title: Śāriputra
+      base_file: f0355.txt
+      order: 4
+    fEDD0:
+      title: CI_Śāriputra and Mahāmaudgalyāyana
+      base_file: fEDD0.txt
+      order: 5
+    f994D:
+      title: CII_Teacher I, Pūraṇa Kāśyapa
+      base_file: f994D.txt
+      order: 6
+    f1AA4:
+      title: CII_Teacher II, Maskarin Gośālīputra
+      base_file: f1AA4.txt
+      order: 7
+    f2145:
+      title: CII_Teacher III, Saṃjayin Vairaṭīputra
+      base_file: f2145.txt
+      order: 8
+    f70BB:
+      title: The conversion of Maudgalyāyana and Śāriputra
+      base_file: f70BB.txt
+      order: 9
+    f6864:
+      title: The conversion of Koṣṭhila
+      base_file: f6864.txt
+      order: 10
+    f099F:
+      title: Antaroddāna
+      base_file: f099F.txt
+      order: 11
+    f46F2:
+      title: Why Śāriputra was wise 1
+      base_file: f46F2.txt
+      order: 12
+    fFD4B:
+      title: Why Śāriputra was neither rich nor poor
+      base_file: fFD4B.txt
+      order: 13
+    f6111:
+      title: Why Śāriputra was wise 2
+      base_file: f6111.txt
+      order: 14
+    fC203:
+      title: Why Maudgalyāna has magical power 1
+      base_file: fC203.txt
+      order: 15
+    f7474:
+      title: Why Maudgalyāna has magical power 2
+      base_file: f7474.txt
+      order: 16
+    f1A1E:
+      title: Why Koṣṭhila is pratisaṃvedin
+      base_file: f1A1E.txt
+      order: 17
+    f400F:
+      title: Rules for pravrajyā and upasaṃpadā
+      base_file: f400F.txt
+      order: 18
+    fDA0B:
+      title: Antaroddāna
+      base_file: fDA0B.txt
+      order: 19
+    f0618:
+      title: Antaroddāna
+      base_file: f0618.txt
+      order: 20
+    fB17B:
+      title: Uddāna
+      base_file: fB17B.txt
+      order: 21
+    fC874:
+      title: Uddāna
+      base_file: fC874.txt
+      order: 22
+    f1499:
+      title: Uddāna
+      base_file: f1499.txt
+      order: 23
+    f8B23:
+      title: Maudgalyāyana’s journey to Hell and Heaven
+      base_file: f8B23.txt
+      order: 24
+    f3E3B:
+      title: Ānanda’s two nephews
+      base_file: f3E3B.txt
+      order: 25
+    f21BA:
+      title: Buddha’s smile
+      base_file: f21BA.txt
+      order: 26
+    f7A71:
+      title: Nāgakumāra
+      base_file: f7A71.txt
+      order: 27
+    f77E1:
+      title: CIII_Buddha in Vaiśālī
+      base_file: f77E1.txt
+      order: 28
+    f9424:
+      title: Why Saṃgharakṣita was born in a rich family
+      base_file: f9424.txt
+      order: 29
+    f3148:
+      title: Nāgakumārāvadāna
+      base_file: f3148.txt
+      order: 30
+    f4D88:
+      title: Rule against ordination of Tīrthkas
+      base_file: f4D88.txt
+      order: 31
+    fFD28:
+      title: Mātṛghātaka
+      base_file: fFD28.txt
+      order: 32
+    f6349:
+      title: Pitṛghātaka
+      base_file: f6349.txt
+      order: 33
+    fFF2C:
+      title: Uddāna
+      base_file: fFF2C.txt
+      order: 34
+    f86A7:
+      title: ānantaryāni karmāṇi, pārājika, utkṣepaṇīya
+      base_file: f86A7.txt
+      order: 35
+    f9CF9:
+      title: Uddāna
+      base_file: f9CF9.txt
+      order: 36
+    f3D93:
+      title: Bodily imperfections
+      base_file: f3D93.txt
+      order: 37
+  chapter_to_tile:
+    CI: Maudgalyāyana
+    CII: Maudgalyāyana and Śāriputra searching for teachers of various philosopical
+      creeds
+    CIII: Saṃgharakṣitāvadāna
+statistics: {}
+quality: {}
+copyright:
+  status: Unknown
+  notice: ''
+  info_url: null
+license: null

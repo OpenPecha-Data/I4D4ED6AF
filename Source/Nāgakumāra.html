@@ -1,0 +1,594 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=499' accesskey='1'>MSV 1,01: Pravrajyāvastu</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>MSV 1,01: Pravrajyāvastu<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_499[3310]" value="3310" id="lancheckbox" checked >Sanskrit: Pravr-v II, GMB, Pravr-v I, GMB, Pravr-v III, GMB, Pravr-v IV, GMB</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_499[3305]" value="3305" id="lancheckbox" checked >Tibetan: Kj D ’dul ba ka</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="499">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="499">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='499'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v499">Search in MSV 1,01: Pravrajyāvastu</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=499'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=499'>MSV 1,01: Pravrajyāvastu</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=499" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="50990.Pravrajyavastupiṇḍoddāna|50991.Uddāna|50992.Historicalevents|50993.Śāriputra|50994.Maudgalyāyana|50996.MaudgalyāyanaandŚāriputrasearchingforteachersofvariousphilosopicalcreeds|51000.TheconversionofMaudgalyāyanaandŚāriputra|51001.TheconversionofKoṣṭhila|51002.Antaroddāna|51003.WhyŚāriputrawaswise1|51004.WhyŚāriputrawasneitherrichnorpoor|51005.WhyŚāriputrawaswise2|51006.WhyMaudgalyānahasmagicalpower1|51007.WhyMaudgalyānahasmagicalpower2|51008.WhyKoṣṭhilaispratisaṃvedin|51009.Rulesforpravrajyāandupasaṃpadā|51010.Antaroddāna|51011.Antaroddāna|51012.Uddāna|51013.Uddāna|51014.Uddāna|51015.Maudgalyāyana’sjourneytoHellandHeaven|51016.Ānanda’stwonephews|51017.Buddha’ssmile|51018.Nāgakumāra|51019.Saṃgharakṣitāvadāna|51021.WhySaṃgharakṣitawasborninarichfamily|51022.Nāgakumārāvadāna|51023.RuleagainstordinationofTīrthkas|51024.Mātṛghātaka|51025.Pitṛghātaka|51026.Uddāna|51027.ānantaryānikarmāṇi,pārājika,utkṣepaṇīya|51028.Uddāna|51029.Bodilyimperfections|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50990.Pravrajyavastupiṇḍoddāna" border=0 hspace=2><a id="href_50990.Pravrajyavastupiṇḍoddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820121&level=1&cid=460194" class="ajax_tree0">Pravrajyavastupiṇḍoddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50991.Uddāna" border=0 hspace=2><a id="href_50991.Uddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820122&level=1&cid=460195" class="ajax_tree0">Uddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50992.Historicalevents" border=0 hspace=2><a id="href_50992.Historicalevents" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820123&level=1&cid=460196" class="ajax_tree0">Historical events
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50993.Śāriputra" border=0 hspace=2><a id="href_50993.Śāriputra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820206&level=1&cid=460214" class="ajax_tree0">Śāriputra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('50994.Maudgalyāyana','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_50994.Maudgalyāyana" border=0 hspace=2><a id="href_50994.Maudgalyāyana" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820357&level=1&cid=460232" class="ajax_tree0">Maudgalyāyana
+</td></tr></table>
+<div style="display:none;"  id="div_50994.Maudgalyāyana">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50995.ŚāriputraandMahāmaudgalyāyana" border=0 hspace=2><a id="href_50995.ŚāriputraandMahāmaudgalyāyana" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820407&level=3&cid=460243" class="ajax_tree1">Śāriputra and Mahāmaudgalyāyana
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('50996.MaudgalyāyanaandŚāriputrasearchingforteachersofvariousphilosopicalcreeds','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_50996.MaudgalyāyanaandŚāriputrasearchingforteachersofvariousphilosopicalcreeds" border=0 hspace=2><a id="href_50996.MaudgalyāyanaandŚāriputrasearchingforteachersofvariousphilosopicalcreeds" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820525&level=1&cid=460271" class="ajax_tree0">Maudgalyāyana and Śāriputra searching for teachers of various philosopical creeds
+</td></tr></table>
+<div style="display:none;"  id="div_50996.MaudgalyāyanaandŚāriputrasearchingforteachersofvariousphilosopicalcreeds">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50997.TeacherI,PūraṇaKāśyapa" border=0 hspace=2><a id="href_50997.TeacherI,PūraṇaKāśyapa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820526&level=2&cid=460272" class="ajax_tree1">Teacher I, Pūraṇa Kāśyapa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50998.TeacherII,MaskarinGośālīputra" border=0 hspace=2><a id="href_50998.TeacherII,MaskarinGośālīputra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820539&level=2&cid=460275" class="ajax_tree1">Teacher II, Maskarin Gośālīputra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_50999.TeacherIII,SaṃjayinVairaṭīputra" border=0 hspace=2><a id="href_50999.TeacherIII,SaṃjayinVairaṭīputra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820544&level=2&cid=460279" class="ajax_tree1">Teacher III, Saṃjayin Vairaṭīputra
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51000.TheconversionofMaudgalyāyanaandŚāriputra" border=0 hspace=2><a id="href_51000.TheconversionofMaudgalyāyanaandŚāriputra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820655&level=1&cid=460299" class="ajax_tree0">The conversion of Maudgalyāyana and Śāriputra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51001.TheconversionofKoṣṭhila" border=0 hspace=2><a id="href_51001.TheconversionofKoṣṭhila" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820763&level=1&cid=460348" class="ajax_tree0">The conversion of Koṣṭhila
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51002.Antaroddāna" border=0 hspace=2><a id="href_51002.Antaroddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820840&level=1&cid=460355" class="ajax_tree0">Antaroddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51003.WhyŚāriputrawaswise1" border=0 hspace=2><a id="href_51003.WhyŚāriputrawaswise1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820841&level=1&cid=460356" class="ajax_tree0">Why Śāriputra was wise 1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51004.WhyŚāriputrawasneitherrichnorpoor" border=0 hspace=2><a id="href_51004.WhyŚāriputrawasneitherrichnorpoor" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820874&level=1&cid=460359" class="ajax_tree0">Why Śāriputra was neither rich nor poor
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51005.WhyŚāriputrawaswise2" border=0 hspace=2><a id="href_51005.WhyŚāriputrawaswise2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820895&level=1&cid=460362" class="ajax_tree0">Why Śāriputra was wise 2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51006.WhyMaudgalyānahasmagicalpower1" border=0 hspace=2><a id="href_51006.WhyMaudgalyānahasmagicalpower1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820917&level=1&cid=460366" class="ajax_tree0">Why Maudgalyāna has magical power 1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51007.WhyMaudgalyānahasmagicalpower2" border=0 hspace=2><a id="href_51007.WhyMaudgalyānahasmagicalpower2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820921&level=1&cid=460367" class="ajax_tree0">Why Maudgalyāna has magical power 2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51008.WhyKoṣṭhilaispratisaṃvedin" border=0 hspace=2><a id="href_51008.WhyKoṣṭhilaispratisaṃvedin" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820923&level=1&cid=460368" class="ajax_tree0">Why Koṣṭhila is pratisaṃvedin
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51009.Rulesforpravrajyāandupasaṃpadā" border=0 hspace=2><a id="href_51009.Rulesforpravrajyāandupasaṃpadā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=820924&level=1&cid=460369" class="ajax_tree0">Rules for pravrajyā and upasaṃpadā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51010.Antaroddāna" border=0 hspace=2><a id="href_51010.Antaroddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821269&level=1&cid=460435" class="ajax_tree0">Antaroddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51011.Antaroddāna" border=0 hspace=2><a id="href_51011.Antaroddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821374&level=1&cid=460461" class="ajax_tree0">Antaroddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51012.Uddāna" border=0 hspace=2><a id="href_51012.Uddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821375&level=1&cid=460462" class="ajax_tree0">Uddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51013.Uddāna" border=0 hspace=2><a id="href_51013.Uddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821428&level=1&cid=460470" class="ajax_tree0">Uddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51014.Uddāna" border=0 hspace=2><a id="href_51014.Uddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821585&level=1&cid=460484" class="ajax_tree0">Uddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51015.Maudgalyāyana’sjourneytoHellandHeaven" border=0 hspace=2><a id="href_51015.Maudgalyāyana’sjourneytoHellandHeaven" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821586&level=1&cid=460485" class="ajax_tree0">Maudgalyāyana’s journey to Hell and Heaven
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51016.Ānanda’stwonephews" border=0 hspace=2><a id="href_51016.Ānanda’stwonephews" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821662&level=1&cid=460495" class="ajax_tree0">Ānanda’s two nephews
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51017.Buddha’ssmile" border=0 hspace=2><a id="href_51017.Buddha’ssmile" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821669&level=1&cid=460498" class="ajax_tree0">Buddha’s smile
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51018.Nāgakumāra" border=0 hspace=2><a id="href_51018.Nāgakumāra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821739&level=1&cid=460516" class="ajax_tree0">Nāgakumāra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('51019.Saṃgharakṣitāvadāna','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_51019.Saṃgharakṣitāvadāna" border=0 hspace=2><a id="href_51019.Saṃgharakṣitāvadāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=821822&level=1&cid=460520" class="ajax_tree0">Saṃgharakṣitāvadāna
+</td></tr></table>
+<div style="display:none;"  id="div_51019.Saṃgharakṣitāvadāna">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51020.BuddhainVaiśālī" border=0 hspace=2><a id="href_51020.BuddhainVaiśālī" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822003&level=2&cid=460561" class="ajax_tree1">Buddha in Vaiśālī
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51021.WhySaṃgharakṣitawasborninarichfamily" border=0 hspace=2><a id="href_51021.WhySaṃgharakṣitawasborninarichfamily" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822120&level=1&cid=460621" class="ajax_tree0">Why Saṃgharakṣita was born in a rich family
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51022.Nāgakumārāvadāna" border=0 hspace=2><a id="href_51022.Nāgakumārāvadāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822148&level=1&cid=460630" class="ajax_tree0">Nāgakumārāvadāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51023.RuleagainstordinationofTīrthkas" border=0 hspace=2><a id="href_51023.RuleagainstordinationofTīrthkas" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822192&level=1&cid=460640" class="ajax_tree0">Rule against ordination of Tīrthkas
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51024.Mātṛghātaka" border=0 hspace=2><a id="href_51024.Mātṛghātaka" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822210&level=1&cid=460644" class="ajax_tree0">Mātṛghātaka
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51025.Pitṛghātaka" border=0 hspace=2><a id="href_51025.Pitṛghātaka" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822308&level=1&cid=460666" class="ajax_tree0">Pitṛghātaka
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51026.Uddāna" border=0 hspace=2><a id="href_51026.Uddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822380&level=1&cid=460676" class="ajax_tree0">Uddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51027.ānantaryānikarmāṇi,pārājika,utkṣepaṇīya" border=0 hspace=2><a id="href_51027.ānantaryānikarmāṇi,pārājika,utkṣepaṇīya" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822381&level=1&cid=460677" class="ajax_tree0">ānantaryāni karmāṇi, pārājika, utkṣepaṇīya
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51028.Uddāna" border=0 hspace=2><a id="href_51028.Uddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822431&level=1&cid=460703" class="ajax_tree0">Uddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_51029.Bodilyimperfections" border=0 hspace=2><a id="href_51029.Bodilyimperfections" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=499&mid=822432&level=1&cid=460704" class="ajax_tree0">Bodily imperfections
+</td></tr></table>
+<script language=javascript>test('51018.Nāgakumāra|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=499&amp;mid=821739&amp;level=1">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=499&amp;cid=460516&amp;mid=821739&amp;level=1">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=499&amp;cid=460516&amp;mid=821739&amp;level=1">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><div class='kilderef' id='3731658'></div><div class='clear'></div><span id='3731658bi' class='paragraph'>
+							.&nbsp;</span><span id='3731659bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731660bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731661bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731662bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731663bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731664bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731665bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731666bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731667bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731668bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731669bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731670bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731671bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731672bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731673bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731674bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731675bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731676bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731677bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731678bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731679bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731680bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731681bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731682bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731683bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731684bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731685bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731686bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731687bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731688bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731689bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731690bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731691bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731692bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731693bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731694bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731695bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731696bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731697bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731698bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731699bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731700bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731701bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731702bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731703bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731704bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731705bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731706bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731707bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731708bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731709bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731710bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731711bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731712bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731713bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731714bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731715bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731716bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><div class='kilderef' id='3719953'></div><div class='clear'></div><span id='3719953bi' class='paragraph'>
+							saṅs rgyas bcom lan ’das mñan yod na rgyal byed kyi tshal mgon med zas sbyin gyi kun dga’ rab na bźugs so ||&nbsp;</span><span id='3719954bi' class='paragraph'>
+						 klu rnams kyi kun du spyod pa ni lus la ñin mo bye ma me’i mdog lta bu lan gsum ’bab ciṅ des de dag rus pa’i keṅ (4) rus tsam źig lus par byed do ||&nbsp;</span><span id='3719955bi' class='paragraph'>
+						 klu gźon nu skyes nas riṅ po ma lon pa źig gi lus la ñin mo bye ma me’i mdog lta bu lan gsum ’bab ciṅ des de rus pa’i keṅ rus tsam źig lus par byas pa daṅ des ma la smras pa | ma bdag gis yun ji srid cig tu sdug bsṅal ’di (5) lta bu mnag bar bgyi ’tshal | bu ji srid du ris mthun pa yod kyi bar du’o ||&nbsp;</span><span id='3719956bi' class='paragraph'>
+						 de na klu rdzu ’phrul che ba daṅ mthu che ba gźan gaṅ dag yin pa de dag gi lus la bye ma me’i mdog lta bu mi ’bab nas des smras pa | ma ’di dag la ci’i phyir mi ’bab | mas smras pa | ’di dag (6) ni rdzu ’phrul che ba | mthu che ba | bskal par gnas pa | sa ’dzin pa | ’dab chags kyi rgyal po ’dab bzaṅs kyis dbyuṅ bar mi nus pa yin pas de’i phyir ’di dag la mi ’bab bo ||&nbsp;</span><span id='3719957bi' class='paragraph'>
+						 de na klu phra mo gźan gaṅ dag yin pa de dag gi lus la bye ma me’i mdog lta bu mi ’bab (7) nas des smras pa | ma ’di dag la ni regs na ’di dag la ci’i phyir mi ’bab | mas smras pa | ’di dag gis bcom ldan ’das kyi spyan sṅa nas skyabs su ’gro ba daṅ bslab pa’i gźi dag blaṅs pas de’i phyir ’di dag la mi ’bab bo ||&nbsp;</span><span id='3719958bi' class='paragraph'>
+						 des smras pa | gal te de lta na (96a1) bdag gis kyaṅ macoma ldan ’das kyi spyan sṅa nas skyabs su ’gro ba daṅ bslab pa’i gźi dag blaṅ ṅo ||&nbsp;</span><span id='3719959bi' class='paragraph'>
+						 mas smras pa | bu tshe gcig gi sdug bsṅal ni bla’i tshe rabs maṅ po’i ni ma yin te | gal te khyod kyis gcom ldan ’das kyi spyan sṅa nas skyabs su ’gro (2) ba daṅ bslab pa’i gźi dag blaṅs nas yaṅ dag par ma bsruṅs na yun riṅ por sems can dmyal bar sdug bsṅal ma nag par bya dgos so ||&nbsp;</span><span id='3719960bi' class='paragraph'>
+						 des bsams pa | sdug bsṅal ’di bas ches sdug bsṅal bar ’gyur ba ci źig yod kyis | bcom ldan ’das kyi spyan (3) sṅar skyabs su ’gro ba daṅ bslab pa’i gźi dag len du ’gro ’o sñam nas | de bram ze’i cha lugs su mṅon par sprul nas rgyal byed kyi tshal du soṅ pa daṅ | ji tsam na des dge sloṅ dag bsam gtan daṅ | klog pa daṅ | rnal ’byor daṅ | yid la byed pa la brtson źiṅ gnas (4) pa mthoṅ ṅo ||&nbsp;</span><span id='3719961bi' class='paragraph'>
+						 mthoṅ nas kyaṅ dad pa skyes te | des bsams pa | ji je dar por skyabs su ’gro ba daṅ bslab pa’i gźi dag blaṅ ṅam | ’on te rab tu ’byuṅ bar bya sñam mo ||&nbsp;</span><span id='3719962bi' class='paragraph'>
+						 des yaṅ bsams pa | rab tu ’byuṅ bar bya’o sñam nas de dge sloṅ gi gan du soṅ ste smras (5) pa | ’phags pa bdag rab tu ’byuṅ bar ’tshal lo ||&nbsp;</span><span id='3719963bi' class='paragraph'>
+						 des smras pa | kho bon gsar bu yin pas gnas brtan gźan ’ga’ źig gi druṅ du soṅ śig | des smras pa | ’phags pa bdag gis gźan ṅo ’tshal pha ma mchis te | ’di ltar bdag thog mar kho nar (6) ’phags pa’i gan du mchis pas khyod ñid kyis bdag dge sloṅ ’ga’ źig la gtar par gsol | dge sloṅ de’i mkhan po dgon ba pa źig dgon pa na ’dug pas des de khrid de’i gan du soṅ nas smras pa | mkhan po rigs kyi bu ’di rab tu ’byuṅ bar ’tshal gyis rab tu (7) dbyuṅ du gsol | des smras pa | bźin bzaṅs bcom ldan ’das kyis dge sloṅ dag gśan pa byed du bcug pa ni bla’i rab tu phyuṅ źiṅ bsñen par rdzogs par byas nas yal bar bor ba ni mi ruṅ ṅo źes bka’ stsal pas | ’di yaṅ sems can dmyal bar ’gro bar ’gyur (96b1) la | kho bo yaṅ ltuṅ ba daṅ bcas par ’gyur bas kho bo ’di rab tu mi ’byin to ||&nbsp;</span><span id='3719964bi' class='paragraph'>
+						 des smras pa | mkhan pos rab tu dbyuṅ ba ’ba’ źeg mdzod cig daṅ | bdag gis ’di bslub par bgyi źiṅ klog tu stsal bar bgyi’o ||&nbsp;</span><span id='3719965bi' class='paragraph'>
+						 des de rab tu phyuṅ źiṅ bsñen par rdzogs par byas (2) nas smras pa | bźin bzaṅs ’di ñid khyod kyi mkhan po gcig pa yin | ’di ñid slob dpon yin gyis khyod kyis ’di ñid la dri par bya | khyod kyis ’di ñid la bklag par bya’o ||&nbsp;</span><span id='3719966bi' class='paragraph'>
+						 khyod kyis ’di ñid la bslab par bya’o ||&nbsp;</span><span id='3719967bi' class='paragraph'>
+						 des gcig las ’phros pa’i luṅ bklags (3) pas des de gcig las ’phros pa’i luṅ klog tu gźug par brtsams pa daṅ | des śin tu brtson ’grus brtsams pas kha ton du ltogs nas dge sloṅ slob dpon de śin tu mig gaṅ ste des de la smras pa | bźin bzaṅs ci lhan cig tu bsod sñoms la ’jug par bya’am | (4) ’on te so sor ||&nbsp;</span><span id='3719968bi' class='paragraph'>
+						 des bsams pa | bdag gis mi’i zas kyis ’tsho bar mi nus kyis | bdag klu’i gnas su soṅ la bdud rtsi zos śiṅ thos śiṅ phyir ’oṅ par bya’o sñam nas ||&nbsp;</span><span id='3719969bi' class='paragraph'>
+						 des smras pa | slob dpon so sor ’jug par bya’o ||&nbsp;</span><span id='3719970bi' class='paragraph'>
+						 des smras pa | bźin bzaṅs (5) de ltar gyis śig | de klu’i gnas su lha’i bdud rtse zos nas phyir ’oṅ ṅo ||&nbsp;</span><span id='3719971bi' class='paragraph'>
+						 klu rnams ni gñid che ba yin pas de gaṅ gi tshe gñid log nas laṅs pa de’i tshe na dge sloṅ de bsod sñoms blaṅs nas phyir ’oṅ ṅo ||&nbsp;</span><span id='3719972bi' class='paragraph'>
+						 ji tsam dus gźan źig na dge sloṅ des bsod sñoms glo (6) de sgra la mkhas pas myur ba myur ba kho nar sad nas raṅ bźin gyi cha lugs mi snaṅ bar byas te de sprul pa’i cha lugs su ’dug go ||&nbsp;</span><span id='3719973bi' class='paragraph'>
+						 dge sloṅ dag lhags nas de dag gis de la smras pa | ’di tsa yin | des smras pa | sgrul pa yin no ||&nbsp;</span><span id='3719974bi' class='paragraph'>
+						 de dag gis smras pa | tshe daṅ | (97a1) ldan pa brtson ’grus brtsams pas rtag tu kha ton la brtson pa yin na ci khyod ’di la ser sna byed dam | des smras pa | kho bo ni ’di la cuṅ zad kyaṅ ser sna mi byed de | ’di ltar ’di ni sprul pa yin no ||&nbsp;</span><span id='3719975bi' class='paragraph'>
+						 de dag phan tshun smra ba na bcom ldan ’das kyaṅ (2) phyogs der gśegs nas | bcom ldan ’das kyis bka’ stsal pa | ’di ci yin | dge sloṅ dag gis gsol ba | bcom ldan ’das sprul pa lags so ||&nbsp;</span><span id='3719976bi' class='paragraph'>
+						 bcom ldan ’das kyis bka’ stsal pa | dge sloṅ dag gaṅ zag sprul pa ni chos ’dul ba ’di la mi skye (3) ba’i chos can yin pas | dge sloṅ dag khyed kyis gaṅ zag sprul pa chos ’dul ba ’di las bsñil bar bya’o ||&nbsp;</span><span id='3719977bi' class='paragraph'>
+						 ’ga’ źig gi gan du rab tu ’byuṅ bar ’dod pa ’oṅs na | des de la sprul pa ma yin nam źes dri bar bya’o ||&nbsp;</span><span id='3719978bi' class='paragraph'>
+						 ma dris par rab tu ’byin par byed na (4) ’gal tshabs can du ’gyur ro ||&nbsp;</span><span id='3719979bi' class='paragraph'>
+						 dge slog dag klu’i raṅ bźin lṅa po ’di dag yin la lhag ma ni sprul pa yin no ||&nbsp;</span><span id='3719980bi' class='paragraph'>
+						 lṅa gaṅ źe na | raṅ bźin gyis skye ba daṅ | raṅ bźin gyis ’chi ba daṅ | raṅ bźin gyis ñam ba daṅ | raṅ bźin gyis za ba daṅ | raṅ bźin (5) gyis mi tshaṅs par spyod pa ’khrig pa’i chos sten par byed pa’o ||&nbsp;</span><span id='3719981bi' class='paragraph'>
+						 bcom ldan ’das kyis de la bka’ stsal pa | bźin bzaṅs khyod kyis phuṅ po ’di dag gis yon tan gyi tshogs ’ga’ yaṅ thob par mi nus kyis | dge sloṅ rnams lam ’tshe bar soṅ śig | des (6) bsams pa | ’babs par gal bya sñam nas des sā la’i dgon pa źig tu soṅ nas gtsug lag khaṅ rta babs mthon po daṅ ldan pa | mthoṅs khuṅ daṅ | skar khuṅ dra ba can daṅ | lan kan gyis brgyan pa | sñiṅ daṅ mig ’phrog par byed pa | mtho ris kyi them skas (7) su gyur pa | khri daṅ | khri’u daṅ | yo byad phun sum tshogs pa źig sprul te | dge sloṅ glo bur du ’oṅs pa daṅ | ’gro bar chas pa rnams la yo byad thams cad kyis stobs par byed do ||&nbsp;</span><span id='3719982bi' class='paragraph'>
+						 rgan źugs śig gtsug lag khaṅ der dbyar gnas nas mñan yod du soṅ ṅo | (97b1) drug sde dag gi kun du spyod pa ni ’dir bdag cag gis bram ze daṅ khyim bdag ’oṅs śiṅ lhags pa rnams la yaṅ chos bstan par bya | rgol bdag kyaṅ tshar gcad par bya | raṅ gi grags pa yaṅ bsgrag par bya’o | sñam pas drug sde dag las gaṅ yaṅ ruṅ bas rgyal (2) byed kyi tshal gyi sgo stoṅ par mi ’jog pas ñe dga’ naṅ bar sṅar laṅs te so śiṅ bor nas snam spyar dmar ser gyon te rgyal byed kyi tshal gyi sgo na ’chag ciṅ ’dug go ||&nbsp;</span><span id='3719983bi' class='paragraph'>
+						 des thag riṅ po kho na nas rgan źugs mgo spra ba’i me tog ltar skya ba smin ma ’phyaṅ pa źig ’oṅ ba de mthoṅ (3) nas des bsams pa | ’di ni dge sloṅ gnas brtan ’ga’ źig yin gor mchag sñam nas des bsu ste gnas brtan byon pa legs so byon pa legs so źes byas pa daṅ des smras pa | slob dpon phyag ’tshal lo ||&nbsp;</span><span id='3719984bi' class='paragraph'>
+						 ñe daga’asa bsams pa | kye ma ’di ni rgan źugs (4) źig ste | slob dpon yaṅ mi śes | mkhan po yaṅ mi śes so sñam nas des de la smras pa | rgan źugs khyod ga las ’oṅs | sā la’i dgon pa nas so ||&nbsp;</span><span id='3719985bi' class='paragraph'>
+						 ci de na gtsug lag khaṅ yod dam | des smras pa | gtsug lag khaṅ yod do ||&nbsp;</span><span id='3719986bi' class='paragraph'>
+						 ci de gtsug lag (5) khaṅ yin nam | ’on te phoṅs pa yin | gtsug lag khaṅ ni ci ’dra | phoṅs pa ni ci ’dra | gaṅ na yo byad thams cad daṅ ldan pa ni gtsug lag khaṅ yin la | gaṅ na yo byad thams cad daṅ gral ba ni phoṅs pa yin no ||&nbsp;</span><span id='3719987bi' class='paragraph'>
+						 de gtsug lag khaṅ yin no ||&nbsp;</span><span id='3719988bi' class='paragraph'>
+						 de na ci yoṅ | (6) de na dge sloṅ źal ta byed pa gnas te | des dge sloṅ glo bur du ’oṅs pa daṅ ’gro bar chas pa rnams la yo byaṅ thams cad kyis stobs par byed do ||&nbsp;</span><span id='3719989bi' class='paragraph'>
+						 drug sde dag gi kun du spyod pa ni gaṅ cuṅ zad ci thos pa de phye ’bred kyi dus kyi tshe gcig tu ’dus nas phan tshun rjod par byed pa (7) yin pas ñe dga’ gtsug lag khaṅ du soṅ ste drug sde dag la smras pa | tshe daṅ ldan pa bdag cag gis yun ji srid kyis brel ba spaṅ bar bya | khyod kyis thos pa cuṅ źig yoṅ dam | ne daga’asa smras pa | yod de | sā la’i dgon pa na gtsug lag khaṅ yod do ||&nbsp;</span><span id='3719990bi' class='paragraph'>
+						 (98a1) de na ci yod | de na źal ta byed pa gnas te | des dge sloṅ glo bur du ’oṅs pa daṅ ’gro bar chas pa rnams la yo byed thams cad kyis stobs par byed kyis | tshur sog bdag cag der ’doṅ ṅo ||&nbsp;</span><span id='3719991bi' class='paragraph'>
+						 de dag de ’doṅ ba daṅ | des de dag thag riṅ po kho (2) na nas ’oṅ ba mthoṅ nas des bsams pa | gnas ṅan len kun du spyod pa de dag ’dir ’oṅs so sñam mo ||&nbsp;</span><span id='3719992bi' class='paragraph'>
+						 des yaṅ bsams pa | bdag gis ’di dag la yo byad thams cad kyis bstabs na | ’di dag gis bdag la ci byar yod sñam nas | des de dag la rgan (3) rims kyis gnas mal yaṅ tog daṅ | khaṅ pa brtsegs pa dag bskos śiṅ yo byad thams cad kyis kyaṅ bstabs so ||&nbsp;</span><span id='3719993bi' class='paragraph'>
+						 de dag ñi ma ñuṅ śas śig ’khon nas smras pa | dga’ bo ñe dga’ rgan źugs ’di la ’du ba yaṅ mi snaṅ ’god pa yaṅ mi snaṅ pas bdag cag (4) gis ’di la graṅs dag ’debs su gźug go źes de dag gis de la smras pa | rgan źugs khyod la ’dub yaṅ mi snaṅ | ’god pa yaṅ mi snaṅ pas tshur śog graṅs tob śig | des smras pa | ’phags pa dag cuṅ zad ñams pa’am gcig tu ma gyur tam | de dag (5) gis smras pa | cuṅ zas kyaṅ ñams par ma gyur te tshaṅs pa mtshuṅs par spyod pa rnams kyis drug sde dag gtsug lag khaṅ de ñid du dbyur gnas na de dag gis ’du ba yaṅ mi śes | ’god pa yaṅ mi śes so źes bdag cag smad par ’gyur ro ||&nbsp;</span><span id='3719994bi' class='paragraph'>
+						 des smras pa | mi ruṅ ṅo | gnas brtan dag (6) gal te de ltan bgyi’o ||&nbsp;</span><span id='3719995bi' class='paragraph'>
+						 ji tsam na bya | lo bcu gñis na’o ||&nbsp;</span><span id='3719996bi' class='paragraph'>
+						 de dag gis smras pa | rgan źugs lo bcu gñis na khyod kyis gtsug lag khaṅ ’di sgo ’phar yaṅ thos par ’gyur ro ||&nbsp;</span><span id='3719997bi' class='paragraph'>
+						 des smras pa | lo bdun na’o ||&nbsp;</span><span id='3719998bi' class='paragraph'>
+						 de dag gis smras pa | mi ruṅ ṅo ||&nbsp;</span><span id='3719999bi' class='paragraph'>
+						 des (7) smras pa | zla ba bdun na’o ||&nbsp;</span><span id='3720000bi' class='paragraph'>
+						 de dag gis smras pa | mi duṅ ṅo ||&nbsp;</span><span id='3720001bi' class='paragraph'>
+						 des smras pa | ñin źag bdun na’o ||&nbsp;</span><span id='3720002bi' class='paragraph'>
+						 de dag gis smras pa | dga’ bo ñe dga’ ñin źag bdun gyis rgan źugs ’dis ci źig zes par gyur te de bźin bya’o ||&nbsp;</span><span id='3720003bi' class='paragraph'>
+						 de dag gis de la smras pa | rgan źugs (98b1) de bźin gyis śig | des bsams pa | źag bdun lon na gtsug lag khaṅ ’di mi snaṅ bar ’gyur ro sñam nas | des ṅe nas tshaṅs pa mtshuṅs par spyod pa ṅes pa des pa rnams la la la la ni snam sbyar ’bul bar byed | la la la ni bla gos | la la la ni śam thams | (2) la la la ni rdul zan | la la la ni lhuṅ bzed | la la la ni lhuṅ bzed chuṅ du ’bul bar byed do ||&nbsp;</span><span id='3720004bi' class='paragraph'>
+						 drug sde dag gis de mthoṅ nas de dag gis smras pa | dga’ bo ñe dga’ rgan źugs ’di phyogs tshol gyis źag bdun ’das nas phyogs daṅ bcas nas rtsa nas gdon (3) to ||&nbsp;</span><span id='3720005bi' class='paragraph'>
+						 des kyaṅ bźag bdun ’das nas de dag ñal ba daṅ gtsug lag khaṅ de mi snaṅ bar byas nas rgya mtsho’i ’gram du soṅ ṅo ||&nbsp;</span><span id='3720006bi' class='paragraph'>
+						 de dag kyaṅ sa sgre bo la ñal źiṅ ’khod nas smras pa | dga’ bo ñe dga’ loṅs la rdo rgyus loṅ śig daṅ graṅs ’debs su gźug go ||&nbsp;</span><span id='3720007bi' class='paragraph'>
+						 (4) de dag gis ji tsam na bdag cag sa sgre po la ñal bar mthoṅ nas de dag gis smras pa | bcom ldan ’das la mṅon par dad pa | saṅs rgyas daṅ | chos daṅ | dge ’dun la mchod pa byed pa źig bdag cag gis tho btsams nas gtsug lag khaṅ mi snaṅ bar byas te soṅ (5) ba de lha’am | klu’am | gnod sbyin nam | su yin źes zer ba’i skabs de bcom ldan ’das la dge sloṅ rnams kyis gsol pa daṅ | bcom ldan ’das kyis bka’ stsal pa | dge sloṅ dag dge sloṅ źal ta byed ba de ni sprul pa gaṅ yin pa de ñid yin te | gal te dge (6) sloṅ drug sde dag gis tho btsams par ma gyur na bstan pa mthar thug gi bar du saṅs rgyas daṅ | chos daṅ | dge ’dun dag la mchod pa byed par ’gyur ro ||&nbsp;</span><span id='3720008bi' class='paragraph'>
+						 bcom ldan ’das kyis dgoṅs pa | ñes dmigs gaṅ ci byuṅ ba de ni dge sloṅ dag gtsug lag khaṅ na ’du (7) ’god mi mṅon pa der graṅs ’debs su ’jug pa las gyur pa yin no sñam nas bka’ stsal pa | de lta bas na gaṅ na ’du ba yaṅ mi mṅon ’god pa yaṅ mi mṅon pa der yaṅ dge sloṅ gis graṅs ’debs su gźug par mi bya’o ||&nbsp;</span><span id='3720009bi' class='paragraph'>
+						 gaṅ na ’du ba ni mṅon la ’god pa mi mṅon pa (99a1) der yaṅ dge sloṅ gis graṅs ’debs su gźug par mi bya’o ||&nbsp;</span><span id='3720010bi' class='paragraph'>
+						 gaṅ na ’god pa ni mṅon la ’dub mi mṅon pa der yaṅ dge sloṅ gi spran bu ’debs su gźug par mi bya’o ||&nbsp;</span><span id='3720011bi' class='paragraph'>
+						 gaṅ na ’du ba daṅ ’god pa mṅon pa der ni dge sloṅ gis dran pa daṅ śes bźin (2) gyis tshod rig par bya’o || ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731717bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3720012bi' class='paragraph'>
+							’dul ba gźi | bam po dgu pa |&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731718bi' class='paragraph'>
+							.&nbsp;</span><span id='3731719bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731720bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731721bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731722bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731723bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731724bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731725bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731726bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731727bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731728bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731729bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731730bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3720013bi' class='paragraph'>
+							de’i ’og tu rgya mtsho’i ’gram du soṅ ste gtsug lag khaṅ rta babs mthon po daṅ ldam pa | mthoṅs khuṅ daṅ skar khuṅ dra bcan daṅ ldan pa | lan ka na gyis brgyan pa | sñiṅ daṅ mig ’phrog (3) par byed pa | mtho ris kyi them skas su gyur ba | khri daṅ khri’u daṅ yo byad phun sum tshogs pa gñis pa źig sprul te | der rgya mtsho chen po’i klu dag bram ze daṅ | khyim bdag gi cha byad kyis mṅon du lhags nas de dag de la chos ñan par byed do ||&nbsp;</span><span id='3720014bi' class='paragraph'>
+						 de dag gis de la chos (4) thos nas dge sloṅ glo bur du ’oṅs pa daṅ ’gro bar chas pa rnams la yo byad thams cad kyis stobs par byed do ||&nbsp;</span><span id='3720015bi' class='paragraph'>
+						 rgan źugs śig gtsug lag khaṅ der dbyar gnas nas mñan yod du soṅ ṅo ||&nbsp;</span><span id='3720016bi' class='paragraph'>
+						 drug sde dag gi kun du spyod pa ni ’dir bdag cag gis bra ma ze daṅ khyim bdag (5) ’oṅs śiṅ lhags pa rnams la yaṅ chos bstan par bya | rgol ba dag kyaṅ tshar gcad par bya | raṅ gi grags pa yaṅ bsgrug par bya’o sñam pas drug sde dag las gaṅ yaṅ ruṅ bas rgyal byed kyi tshal gyi sgo stoṅ par mi ’jog pas ñe dga’ naṅ bar sdar laṅs te so śiṅ bor (6) nas snam sbyar dmar ser gyon te rgyal byed kyi tshal gyi sgo na ’chag ciṅ ’dug go ||&nbsp;</span><span id='3720017bi' class='paragraph'>
+						 des thag riṅ po kho na nas rgan źugs mgo smra ba’i me tog ltar skya ba smin ma ’phyaṅ ba źig ’oṅ ba de mthoṅ nas des bsams pa | ’di ni dge sloṅ gnas brtan ’ga’ źig yin gor ma chag (7) sñan nas des de bsu ste gnas brtan byon pa legs so byon pa legs so źes byas pa daṅ des smras pa | slob dpon phyag ’tshal lo ||&nbsp;</span><span id='3720018bi' class='paragraph'>
+						 ñe dga’ sa bsams pa | kye ma ’di ni rgan źugs śig ste | slob dpon yaṅ mi śes mkhan po yaṅ mi śes so stam nas | des de la smras (99b1) pa | rgan źugs khyod ga las ’oṅs | rgya mtsho’i ’gram nas so ||&nbsp;</span><span id='3720019bi' class='paragraph'>
+						 ci de na gtsug lag khaṅ yod dam | des smras pa | gtsug lag khaṅ yod do ||&nbsp;</span><span id='3720020bi' class='paragraph'>
+						 ci de gtsug lag khaṅ yin nam | ’on te phoṅs pa yin | gtsug lag khaṅ ni ci ’dra | phoṅs pa ni ci ’dra | gaṅ (2) na yo byad thams cad daṅ ldan pa ni gtsug lag khaṅ yin la | gaṅ na yo byad thams cad daṅ bral ba de ni phoṅs pa yin no ||&nbsp;</span><span id='3720021bi' class='paragraph'>
+						 de gtsug lag khaṅ yin no ||&nbsp;</span><span id='3720022bi' class='paragraph'>
+						 de na ci yod | de na dge sloṅ chos smra pa gnas te | de de na bram ze daṅ khyim bdag rnams la chos ston par byed ciṅ (3) de dag gis de la chos thos nas dge sloṅ glo bur du ’oṅs pa daṅ ’gro bar chas pa rnams la yo byad thams cad kyis stobs par byed do ||&nbsp;</span><span id='3720023bi' class='paragraph'>
+						 drug sde dag gi kun du spyod pa ni gaṅ cuṅ zad ci thos pa de phyi ’bred kyi dus kyi tshe gcig tu ’dus nas phan tshun rjod par byed pa yin pas ñe dga’ (4) gtsug lag khaṅ du soṅ ste drug sde dag la smras pa | tshe daṅ ldan pa dag bdag cag gis yun ji srid kyis brel ba spaṅ bar bya | khyod kyis thos bcuṅ źig yod dam | ñe daga’asa smras pa yod de | rgya mtsho’i ’gram na gtsug lag khaṅ yod do ||&nbsp;</span><span id='3720024bi' class='paragraph'>
+						 de na ci yod | de (5) na dge sloṅ chos smra ba gnas te | de de na bram ze daṅ khyim bdag rnams la chos ston par byed ciṅ de dag gis de las chos thos nas dge sloṅ glo bur du ’oṅs pa daṅ ’gro bar chas pa rnams la yo byad thams cad kyim stobs par byed kyis | tshur śog bdag cag der ’doṅ ṅo | (6) de dag der doṅ ba daṅ | des de dag thag riṅ po kho na nas ’oṅ ba mthoṅ nas des bsams pa | gnas ṅan len kun du spyod pa de dag ’dir yaṅ ’oṅs so sñam mo ||&nbsp;</span><span id='3720025bi' class='paragraph'>
+						 des yaṅ bsams pa | bdag ’di dag la cud zad kyaṅ rag lus pa med na ’di dag gis bdag la ci byar (7) yod sñam mo ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class='Sanskrit'><span id='3731731bi' class='paragraph'>
+							.&nbsp;</span><span id='3731732bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731733bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731734bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731735bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731736bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731737bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731738bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731739bi' class='paragraph'>
+						 .&nbsp;</span><span id='3731740bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:49%;'><div class='Tibetan'><span id='3720026bi' class='paragraph'>
+							de nas rgya mtsho chen po’i klu de dag bram ze daṅ khyim bdag gi cha lugs kyis mṅon du lhags pa daṅ | des de dag la chos bstan to ||&nbsp;</span><span id='3720027bi' class='paragraph'>
+						 de dag gis de las chos thos nas dge sloṅ glo bur du ’oṅs pa daṅ ’gro bar chas pa rnams la yo byad thams cad kyis bstabs (100a1) | pa daṅ drug sde dag gis smras pa | dga’ bo ñe dga’ rgan źugs ’dis ci źig śes | gcig las ’phros pa’o ||&nbsp;</span><span id='3720028bi' class='paragraph'>
+						 ’di ni re źig rdzubs pas gcig las ’phros pa’i chos ston gyis dge sloṅ ’di dag ni sde snod gsum daṅ ldan pa | chos sgrogs (2) pa | rigs pa daṅ grol pa’i sbobs pa can śa stag yin na | ci’i phyir ’di dag la gsol ba mi ’debs | de dag gis de la smras pa | rgan źugs khyod kyis ci śes | des smras pa | gcig las ’phros pa’o ||&nbsp;</span><span id='3720029bi' class='paragraph'>
+						 de dag gis smras pa | rgan źugs khyod ni re (3) źig rdzubs pas gcig las ’phros pa’i chos ston gyi | dge sloṅ ’di dag ni sde snod gsum daṅ ldan pa | chos sgrogs pa | rigs pa daṅ grol ba’i spobs pa can śa stag yin na | ci’i phyir ’di dag la gsol ba mi ’debs | des smras pa | ’phags pa dag bdag (4) gis bzlog gam cin khyed ci’i phyir chos mi ston | de dag gis smras pa | dga’ bo ñe dga’ rgan źugs ’di bdag cag daṅ mi mthun par byed kyis gnas nas dbyuṅ ba’i las bya’o ||&nbsp;</span><span id='3720030bi' class='paragraph'>
+						 des bsams pa | gal te bdag la gnas nas dbyuṅ ba’i las byas na klu’i (5) gnas su yaṅ skabs mi rñed do sñam nas des de dag ñal ba daṅ gtsug lag khaṅ de yaṅ mi snaṅ bar byas te rgya mcho chen por źugs so ||&nbsp;</span><span id='3720031bi' class='paragraph'>
+						 de dag bye ma’i thaṅ la ñal źiṅ ’khod ’khod nas smras pa | dga’ bo ñe dga’ logs la seṅ ge’i khri śoms śig daṅ chos bstan bar (6) bya’o ||&nbsp;</span><span id='3720032bi' class='paragraph'>
+						 de dag gis ji tsam na bdag cag bye ma’i thaṅ la ñal ba mthoṅ nas de dag gis smras pa | bcom ldan ’das la mṅon par dad pa | saṅs rgyas daṅ | chos daṅ | dge ’dun la mchod pa byed pa źig bdag cag gis tho btsams nas gtsug lag khaṅ mi snaṅ (7) bar byas te soṅ ba de lha’am | klu ’am | gnod sbyin nam | su yin źes zer ba’i skabs de bcom ldan ’das la dge sloṅ rnams kyis gsol pa daṅ | bcom ldan ’das kyis bka’ stsal pa | dge sloṅ dag dge sloṅ chos smra ba de ni sprul pa gaṅ yin pa de ñid yin (100b1) te | gal te dge sloṅ drug sde dag gis tho btsams par ma gyur na bstan pa mthar thug gi bar du saṅs rgyas daṅ | chos daṅ | dge ’dun dag la mchod pa byed par ’gyur ro ||&nbsp;</span><span id='3720033bi' class='paragraph'>
+						 bcom ldan ’das kyis dgoṅs pa | ñes dmigs gaṅ ci byuṅ ba de ni dge sloṅ daṅ (2) ma gsol bar chos ston par byed pa las gyur pa yin no sñam nas bka’ stsal pa | de lta bas na dge sloṅ gis ma gsol bar chos bstan par mi bya’o ||&nbsp;</span><span id='3720034bi' class='paragraph'>
+						 dge sloṅ ma gsol bar chos ston na ’gal tshabs can du ’gyur ro ||&nbsp;</span><span id='3720035bi' class='paragraph'>
+						 de’i ṅor mgron du bos pa la ni ltuṅ ba med do ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'><div class=''><span id='bi' class=''>
+							&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "";
+							kilderef = "  ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:49%;'></div><div class='textvar' style='width:49%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=0b54c6d5-d14c-11e4-bbf3-001cc4ddf0f4</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>
